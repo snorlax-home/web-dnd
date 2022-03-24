@@ -27,17 +27,6 @@ h1{
    padding:10px
  }
 
-div.categories img{
-   width: 30%;
-   padding: 10px;
-}
-
-div.products img{
-   width:25%;
-   padding-top:100px;
-   padding-left:20px;
-}
-
 /* ===============================
    Mobile Styles: 0px to 640px 
    ===============================
