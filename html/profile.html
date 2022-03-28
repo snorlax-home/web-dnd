@@ -1,0 +1,188 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/style/profile_style.css" />
+    <script src="../js/profile.js"></script>
+    <title>Profile</title>
+  </head>
+  <body>
+    <div class="header">
+      <img src="../asset/img/logo.svg" alt="logo" class="logo" />
+
+      <div class="nav">
+        <div class="links">
+          <div class="link">Category</div>
+          <div class="link">About Us</div>
+          <div class="link">FAQ</div>
+          <div class="link">Cart</div>
+        </div>
+      </div>
+
+      <div class="profile"></div>
+    </div>
+
+    <div class="main">
+      <!-- Edit Profile -->
+      <div class="editProfile" onsubmit="updateUserInfo()">
+        <form class="editProfileForm" onsubmit="">
+          <div class="formTitle">My Profile</div>
+          <br />
+          <label for="username">Username</label>
+          <input id="username" type="text" value="  " />
+          <br />
+          <label for="email">Email</label>
+          <input id="email" type="text" />
+          <br />
+          <label for="contactNumber">Contact Number</label>
+          <input id="contactNumber" type="tel" />
+          <br />
+          <label for="gender">Gender</label>
+          <div id="gender">
+            <input name="gender" type="radio" value="male" class="genderRadioButton" />
+            <label for="gender">Male</label>
+            <input
+              name="gender"
+              type="radio"
+              value="female"
+              class="genderRadioButton"
+            />
+            <label for="gender">Female</label>
+          </div>
+          <br />
+          <label for="dob">Date of Birth</label>
+          <input id="dob" type="date" />
+          <br />
+          <input type="submit" value="SAVE" class="submitButton" />
+        </form>
+      </div>
+      <script>
+        loadCookie();
+      </script>
+      <!-- Change Password -->
+      <div class="changePassword" onsubmit="validatePassword()">
+        <form class="changePasswordForm">
+          <div class="formTitle">Change Password</div>
+          <br />
+          <label for="currentPassword">Current Password</label>
+          <input id="currentPassword" type="password" />
+          <br />
+          <label for="newPassword">New Password</label>
+          <input id="newPassword" type="password" />
+          <br />
+          <label for="confirmPassword">Confirm Password</label>
+          <input id="confirmPassword" type="password" />
+          <br />
+          <input type="submit" value="SAVE" class="submitButton" />
+        </form>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="copyright">&copy; 2022 ShoppyMart. All Rights Reserved.</div>
+      <div class="docs">
+        <div class="links">
+          <a href="tnc.html" class="link">Terms and Conditions</a><br />
+          <a href="privacy_policy.html" class="link">Privacy Policy</a><br />
+        </div>
+        <div class="address">
+          <strong> Address </strong>
+          <address>
+            ShoppyMart, <br />
+            Tunku Abdul Rahman University College ,<br />
+            Main Campus,<br />
+            Jalan Genting Kelang, <br />
+            53300 Kuala Lumpur, <br />
+            Wilayah Persekutuan Kuala Lumpur
+          </address>
+        </div>
+      </div>
+
+      <style>
+        body {
+          padding: 0;
+          margin: 0;
+        }
+
+        div.header .logo {
+          padding: 15px;
+        }
+
+        .header {
+          height: 65px;
+          width: 100%;
+          background-color: #fa87a1;
+          display: flex;
+          align-items: center;
+        }
+
+        div.header .nav {
+          margin-left: auto;
+          margin-right: 65px;
+        }
+
+        div.header .link {
+          padding: 0 15px;
+          cursor: pointer;
+        }
+
+        div.header .links {
+          font-family: "Montserrat";
+          font-weight: 900;
+          color: #ffffff;
+          font-size: 18px;
+          display: flex;
+          margin-left: auto;
+          margin-right: 65px;
+        }
+
+        div.header .profile {
+          position: absolute;
+          top: 15px;
+          right: 15px;
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          margin-left: auto;
+          margin-right: 0;
+          background-image: url("../asset/img/icons/profile.svg");
+          display: flex;
+        }
+
+        .footer {
+          position: static;
+          bottom: 0;
+          height: 200px;
+          width: 100%;
+          background-color: #fa87a1;
+          color: white;
+        }
+
+        div.footer .copyright {
+          position: static;
+          bottom: 0;
+          padding: 15px;
+        }
+
+        div.footer .links {
+          height: 100px;
+          padding: 15px;
+          align-content: space-between;
+        }
+
+        div.footer .link {
+          color: white;
+          font-weight: bold;
+          padding-top: 10px;
+        }
+        div.footer .address {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
+      </style>
+    </div>
+  </body>
+</html>
