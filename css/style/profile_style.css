@@ -1,0 +1,64 @@
+div.main {
+  height: max-content;
+  width: 100%;
+}
+
+div.main .editProfileForm,
+.changePasswordForm {
+  padding: 30px;
+}
+
+div.main .formTitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  color: #8c4900;
+}
+
+div.main label {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  color: #8c4900;
+  padding-bottom: 20px;
+}
+
+div.main #username,
+#email,
+#contactNumber,
+#dob,
+#currentPassword,
+#newPassword,
+#confirmPassword {
+  width: 40%;
+  padding: 10px;
+  margin-bottom: 20px;
+  height: calc(100% / 12);
+  border: 1px solid #8c4900;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+div.main input[type="radio"] {
+  cursor: pointer;
+}
+
+div.main .submitButton {
+  background: #fa87a1;
+  border-radius: 10px;
+  margin: 10px;
+  width: 150px;
+  height: 40px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
+  border: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}

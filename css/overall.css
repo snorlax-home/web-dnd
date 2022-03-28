@@ -1,6 +1,7 @@
 body {
     padding: 0;
     margin: 0;
+    font-family: "Montserrat";
 }
 /* Header Styles */
 div.header .logo {
@@ -18,7 +19,7 @@ div.header .logo {
 div.header .nav {
     margin-left: auto;
     margin-right: 65px;
-}
+} 
 
 div.header .link {
     padding: 0 15px;

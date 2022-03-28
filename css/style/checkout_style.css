@@ -1,0 +1,12 @@
+/*dk why background color show budao chg*/
+body {
+    background-color: #F2F2F2;
+}
+
+section {
+    background-color: white;
+}
+
+/*https://stackoverflow.com/questions/15441742/change-last-letter-color
+if wan target *
+*/

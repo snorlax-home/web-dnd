@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="../css/overall.css">
+    <link rel="stylesheet" href="../css/layout/checkout_layout.css">
+    <link rel="stylesheet" href="../css/layout/checkout_style.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img src="../../asset/img/logo.svg" alt="logo" class="logo" />
+          
+            <div class="nav">
+              <div class="links">
+                <div class="link">Category</div>
+                <div class="link">About Us</div>
+                <div class="link">FAQ</div>
+                <div class="link">Cart</div>
+              </div>
+            </div>
+          
+            <div class="profile"></div>
+          </div>
+    </header>
+    <h1 id="title">Checkout</h1>
+    <section id="left">
+        <h2>Shipping Information</h2>
+        <form action="?.js" method="post">
+            <div>
+                <label for="fname">First name*</label>
+                <input type="text" id="fname" name="fname" placeholder="First name" required>
+            </div>
+            <div>
+                <label for="lname">Last name*</label>
+                <input type="text" id="lname" name="lname" placeholder="Last name" required>
+            </div>
+            <div>
+                <label for="address">Address*</label>
+                <input type="text" id="address" name="address" placeholder="Address" required>
+            </div>
+            <div>
+                <label for="City">City*</label>
+                <input type="text" id="city" name="city" placeholder="City" required>
+            </div>
+            <div>
+                <label for="address">State*</label>
+                <select name="state" id="state" required>
+                    <option value="johor">Johor</option>
+                    <option value="kedah">Kedah</option>
+                    <option value="Kelantan">Kelantan</option>
+                    <option value="kuala-lumpur">Kuala Lumpur</option>
+                    <option value="labuan">Labuan</option>
+                    <option value="Melaka">Melaka</option>
+                    <option value="negeri-sembilan">Negeri Sembilan</option>
+                    <option value="pahang">Pahang</option>
+                    <option value="perak">Perak</option>
+                    <option value="perlis">Perlis</option>
+                    <option value="pulau-pinang">Pulau Pinang</option>
+                    <option value="putrajaya">Putrajaya</option>
+                    <option value="sabah">Sabah</option>
+                    <option value="sarawak">Sarawak</option>
+                    <option value="selangor">selangor</option>
+                </select>
+            </div>
+            <div>
+                <label for="">Select Delivery Method</label><br>
+                <input type="radio" id="standard" name="delivery-method" value="standard" checked>
+                <label for="standard">Standard</label><br>
+                <input type="radio" id="express" name="delivery-method" value="express">
+                <label for="express">Express</label>
+            </div>
+            <div>
+                <label for="phone">Phone*</label>
+                <input type="text" id="phone" name="phone" placeholder ="(nnn) nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required>
+            </div>
+            <div>
+                <!--might need pattern-->
+                <label for="email">Email*</label>
+                <input type="text" id="email" name ="email" placeholder ="example@mail.com" required>
+            </div>
+            <div>
+                <!--not sure label correct or not-->
+                <input type="checkbox" id="confirmation" name="confirmation" value="confirm">
+                <label for="confirmation">I have read and consent to ShoppyMart processing my information and in accordance with the <a href="policy/tnc.html">Terms and Conditions</a> and <a href="policy/privacy_policy.html">Privacy Policy</a>.</label>
+            </div>
+            <div>
+                <!--not sure can liddis or not-->
+                <input type="submit" value="Continue to Payment">
+            </div>
+        </form>
+    </section>
+    <aside>
+        <h2>Summary</h1>
+    </aside>
+</body>
+</html>

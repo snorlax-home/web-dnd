@@ -1,0 +1,58 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../js/signup.js"></script>
+    <link rel="stylesheet" href="../css/style/signup_style.css">
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <a href="index.html">
+          <img src="../asset/img/logo.svg" alt="ShoppyMart's Logo" />
+        </a>
+      </div>
+      <div class="nav">
+        <div class="links">
+          <div class="link">Question ?</div>
+          <div class="link">Need Help?</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+        <div class="signupform" onsubmit="signup()">
+            <form>
+                <div class="formTitle">SIGN UP</div>
+                <label for="username">Username</label> 
+                <br>
+                <input id="username"></input>
+                <br>
+                <label for="password">Password</label>
+                <br>
+                <input id="password" type="password"></input>
+                <br>
+                <label for="confirmPassword">Confirm Password</label>
+                <br>
+                <input id="confirmPassword" type="password"></input>
+                <br>
+                <div class="policy">By signing this up, you agree to ShoppyMart's <br> <a href="policy/tnc.html">Term and Condition</a> & <a href="policy/privacy_policy.html">Privacy Policy</a></div>
+                <br>
+                <input id="signup" type="submit" value="Sign Up"></input>
+            </form>
+        </div>
+        <div class="background">
+            <img src="../asset/img/logo.svg" alt="ShoppyMart's Logo" class="background-img">
+            <br>
+            <span id="bg-title">
+                ShoppyMart
+            </span>
+            <br>
+            The best online market
+        </div>  
+    </div>    
+    
+  </body>
+</html>
