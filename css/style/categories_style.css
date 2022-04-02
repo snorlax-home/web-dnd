@@ -13,62 +13,15 @@ body {
 }
 
 h1{
-   text-align: center;
+   
    font-size: 30px;
-   padding-top: 50px;
-   padding-bottom: 50px;
    color:rgb(250, 135, 161);
 }
 
-.flex-container {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   padding:10px
- }
-
-/* ===============================
-   Mobile Styles: 0px to 640px 
-   ===============================
-*/
-@media only screen and (max-width: 640px) {
-
-   
-   a#navicon {
-      display: block;
-   }
-   
-   header nav {
-      padding-bottom: 15px;
-   }
-   
-   header nav ul {
-      display: none;
-   }
-   
-   header nav ul li {
-      font-size: 1em;
-      line-height: 1.3em;
-      height: 1.3em;
-   }
-   
-   a#navicon:hover+ul, header nav ul:hover {
-      display: block;
-   }
+h2{
+   font-size: 25px;
+   color:rgb(250, 135, 161);
 }
 
-@media only screen and (min-width: 641px) { 
-   header nav ul {
-      display: -webkit-flex;
-      display: flex;
-      -webkit-flex-flow: row nowrap;
-      flex-flow: row nowrap;
-      -webkit-justify-content: center;
-      justify-content: center;
-   }
-   
-   header nav ul li {
-      -webkit-flex: 0 1 auto;
-      flex: 0 1 auto;
-   }
-}
+
+
