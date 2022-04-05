@@ -7,7 +7,7 @@
     <title>Checkout</title>
     <link rel="stylesheet" href="../css/overall.css">
     <link rel="stylesheet" href="../css/layout/checkout_layout.css">
-    <link rel="stylesheet" href="../css/layout/checkout_style.css">
+    <link rel="stylesheet" href="../css/style/checkout_style.css">
 </head>
 <body>
     <header>
@@ -26,27 +26,29 @@
             <div class="profile"></div>
           </div>
     </header>
+    <!--Add back to cart-->
+    <a href="shoppingcart.html" class="back-to-cart">&#60&#160&#160&#160Back to Cart</a>
     <h1 id="title">Checkout</h1>
-    <section id="left">
-        <h2>Shipping Information</h2>
-        <form action="?.js" method="post">
-            <div>
+    <!-- rmb change -->
+    <form action="?.js" method="post">
+        <div class="shipping">
+            <h2>Shipping Information</h2>        
+            <div class="form-group1">
                 <label for="fname">First name*</label>
-                <input type="text" id="fname" name="fname" placeholder="First name" required>
-            </div>
-            <div>
+                <input type="text" id="fname" name="fname" placeholder="First name" required><br>
+            
+            
                 <label for="lname">Last name*</label>
-                <input type="text" id="lname" name="lname" placeholder="Last name" required>
-            </div>
-            <div>
+                <input type="text" id="lname" name="lname" placeholder="Last name" required><br>
+            
+            
                 <label for="address">Address*</label>
-                <input type="text" id="address" name="address" placeholder="Address" required>
-            </div>
-            <div>
+                <input type="text" id="address" name="address" placeholder="Address" required><br>
+            
+            
                 <label for="City">City*</label>
-                <input type="text" id="city" name="city" placeholder="City" required>
-            </div>
-            <div>
+                <input type="text" id="city" name="city" placeholder="City" required><br>
+            
                 <label for="address">State*</label>
                 <select name="state" id="state" required>
                     <option value="johor">Johor</option>
@@ -65,36 +67,59 @@
                     <option value="sarawak">Sarawak</option>
                     <option value="selangor">selangor</option>
                 </select>
+                <br>
+    
+                <label for ="zipcode">Zipcode*</label>
+                <input type="text" id="zipcode" name="zipcode" placeholder="Zipcode" required>
+                <br>
             </div>
-            <div>
+            
+            <div class="select-delivery-method">
                 <label for="">Select Delivery Method</label><br>
                 <input type="radio" id="standard" name="delivery-method" value="standard" checked>
-                <label for="standard">Standard</label><br>
+                <label for="standard">Standard FREE</label><br>
                 <input type="radio" id="express" name="delivery-method" value="express">
-                <label for="express">Express</label>
+                <label for="express">Express MYR 20.00</label>
+                <br>
             </div>
-            <div>
+            
+            <br>
+            <div class="form-group2">
                 <label for="phone">Phone*</label>
                 <input type="text" id="phone" name="phone" placeholder ="(nnn) nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required>
-            </div>
-            <div>
+                <br>
+            
                 <!--might need pattern-->
                 <label for="email">Email*</label>
                 <input type="text" id="email" name ="email" placeholder ="example@mail.com" required>
+                <br>            
             </div>
-            <div>
-                <!--not sure label correct or not-->
+            
+            <!--not sure label correct or not-->
+            <div class="checkbox">
                 <input type="checkbox" id="confirmation" name="confirmation" value="confirm">
-                <label for="confirmation">I have read and consent to ShoppyMart processing my information and in accordance with the <a href="policy/tnc.html">Terms and Conditions</a> and <a href="policy/privacy_policy.html">Privacy Policy</a>.</label>
+                <div id="text">
+                    <p>
+                        I have read and consent to ShoppyMart processing my information and in accordance with the <a href="policy/tnc.html" id="checkBox">Terms and Conditions</a> and <a href="policy/privacy_policy.html" id="checkBox">Privacy Policy</a>.
+                    </p>
+                </div>
             </div>
-            <div>
-                <!--not sure can liddis or not-->
-                <input type="submit" value="Continue to Payment">
+        </div>
+        <div class="summary">
+            <h2>Summary</h2>
+            <hr>
+            <div class="details">
+                <p>Item Subtotal</p>
+                <p>Shipping</p>
+                <p>Tax</p>
             </div>
-        </form>
-    </section>
-    <aside>
-        <h2>Summary</h1>
-    </aside>
+            <hr>
+            <p id="total">Total</p>
+        </div>
+            <!--not sure can liddis or not-->
+            <input type="button" class="button" value="Continue to Payment">
+    </form>
+    
+    
 </body>
 </html>

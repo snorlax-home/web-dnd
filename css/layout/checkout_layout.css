@@ -1,15 +1,83 @@
-h1#title {
-    text-align: center;
-    color: #FA87A1;
-
-}
-
-
-section {
-    width: 60%;
+a.back-to-cart {
     float: left;
-    margin-left: 3.33%;
-
+    padding-top: 40px;
+    padding-left: 48px;
 }
 
+h1#title {
+    padding-left: 650px;
+}
+
+/* Shipping layout */
+div.shipping {
+    float: left;
+    width: 54%;
+    margin-left: 48px;
+    padding-bottom: 30px;
+}
+
+div.shipping h2 {
+    padding-left: 30px;
+}
+
+div.shipping .form-group1 label, div.shipping .form-group2 label {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+}
+
+
+div.select-delivery-method {
+    padding-left:100px;
+}
+
+form div.checkbox {
+    width: 555px;
+    padding-bottom: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 100px;
+}
+
+form div.checkbox input[type=checkbox] {
+    float:left;
+    margin-top: 5px;
+}
+
+form div.checkbox #text {
+    margin-left: 25px;
+}
+
+form .button{
+    width: 54%;
+    margin-top: 10px;
+    margin-left: 48px;
+    float:left;
+}
+
+/* Summary layout */
+div.summary {
+    float: right;
+    margin-right: 2.3%;
+    width: 38%;
+}
+
+div.summary h2 {
+    padding-left: 30px;
+}
+
+hr {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+div.summary .details {
+    padding-left: 30px;
+}
+
+div.summary #total {
+    padding-left: 30px;
+}
 
