@@ -110,3 +110,17 @@ function deleteItemsFromCart(event){
     var element = event.target.parentNode.parentNode.parentNode.parentNode;
     element.remove();
 }
+
+function checkItem(){
+    var checkBox1 = document.getElementById("check1");
+    var checkBox2 = document.getElementById("check2");
+    var checkBox3 = document.getElementById("check3");
+
+    if (!checkBox1.checked && !checkBox2.checked && !checkBox3.checked) {
+        alert("You have not selected any items for checkout");
+    }
+    
+    else{
+        location.replace("checkout.html")
+    }  
+}
