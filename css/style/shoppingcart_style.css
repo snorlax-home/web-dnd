@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+html {
+    height: 100%;
+}
+
+body {
+   min-height: 100%;   
+   margin: 0px auto;
+   min-width: 100%;
+   max-width: 100%;   
+   width: 100%;
+   cursor: text;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+
+h1{
+   text-align: center;
+   font-size: 40px;
+   color:rgb(250, 135, 161);
+}
+
+.border{
+   background-color: rgb(196, 196, 196, 0.37);
+}
+
+.input{
+   width: 50px;
+   height: 32px;
+   font-size: 16px;
+   font-weight: 400;
+}
+
+.cart_bar{
+   background-color: rgba(196, 196, 196, 0.37);
+   border: 1px solid rgba(0,0,0,.14);
+}
+
+.checkbox{
+   width: 16px;
+   height: 16px;
+   cursor:pointer
+}
+
+.subtrate{
+   width:32px;
+   height: 32px;
+}
+
+.add{
+   width:32px;
+   height: 32px;
+}
+
+.total_price{
+   width: 10.43557%;
+   text-align: right;
+   color:rgb(250, 135, 161);
+   font-style: bold;
+}
+
+.delete:hover{
+   color:rgb(250, 135, 161);
+}
+
+.checkout{
+   background-color: rgba(196, 196, 196, 0.37);
+   font-size:17px
+}
+
+.select_all{
+   font-size:17px;
+}
+
+.final_price{
+   color:rgb(250, 135, 161);
+}
+
+.checkout_button{
+   background-color: rgb(250, 135, 161);
+   color:white;
+   border:rgb(250, 135, 161);
+   cursor:pointer;
+}
+
+.checkout_button:hover{
+   background-color: white;
+   color:black;
+}
+ 

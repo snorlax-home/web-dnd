@@ -1,12 +1,129 @@
-/*dk why background color show budao chg*/
+/* HTML and body styles*/
 body {
-    background-color: #F2F2F2;
+    background-color: #e4e4e4;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
 }
 
-section {
+a.back-to-cart {
+    text-decoration: none;
+    color:#000000;
+}
+
+a.back-to-cart:hover {
+    text-decoration: underline;
+}
+
+h1#title {
+    color: #FA87A1;
+}
+
+/* Shipping styles */
+div.shipping {
     background-color: white;
+
+}
+
+div.shipping  h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+
+form input[type=text] {
+    width: 350px;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+form input#zipcode {
+    width: 154px;
+}
+
+form select {
+    width: 154px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+form div.checkbox {
+    background-color: #e4e4e4;
+}
+
+
+form div.checkbox #text {
+    text-align: justify;
+}
+
+
+form div.checkbox a#checkBox {
+    color:#000000;
 }
 
 /*https://stackoverflow.com/questions/15441742/change-last-letter-color
 if wan target *
 */
+
+/* Summary styles */
+div.summary {
+    background-color: white;
+}
+
+div.summary h2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+div.summary hr {
+    border-color: #f2f2f2;
+}
+
+div.summary .details {
+    font-size: 20px;
+}
+
+div.summary #total {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* Button styles */
+form .button{
+    background-color: #fa87a1;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+/*Mobile Styles*/
