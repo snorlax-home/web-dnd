@@ -34,7 +34,7 @@ div.shipping  h2 {
 }
 
 
-form input[type=text] {
+form input[type=text], form input[type=email], form input[type=tel] {
     width: 350px;
     padding: 12px 20px;
     display: inline-block;
@@ -51,6 +51,12 @@ form input#zipcode {
     width: 154px;
 }
 
+div.shipping .form-group1 label::after, div.shipping .form-group2 label::after {
+    content: attr(data-end);
+    color:red;
+}
+
+
 form select {
     width: 154px;
     padding: 10px;
@@ -63,6 +69,15 @@ form select {
     font-size: 20px;
 }
 
+form div.select-delivery-method label#standardLabel::after {
+    content: attr(data-end);
+    color: #FF740F;
+}
+
+form div.select-delivery-method label#expressLabel::after {
+    content: attr(data-end);
+    color: #00000091;
+}
 
 form div.checkbox {
     background-color: #e4e4e4;
@@ -77,10 +92,6 @@ form div.checkbox #text {
 form div.checkbox a#checkBox {
     color:#000000;
 }
-
-/*https://stackoverflow.com/questions/15441742/change-last-letter-color
-if wan target *
-*/
 
 /* Summary styles */
 div.summary {

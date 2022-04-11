@@ -77,6 +77,10 @@ div.summary .details {
     padding-left: 30px;
 }
 
+div.summary .details .shippingAmount {
+    padding-left:50px;
+}
+
 div.summary #total {
     padding-left: 30px;
 }

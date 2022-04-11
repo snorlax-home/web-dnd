@@ -1,8 +1,20 @@
 section {
     padding-left: 3.33%;
-    padding-right: 3.33%;
+    padding-right: 7%;
+
 }
 
 a {
-    text-decoration: none;
+    color: black;
+}
+
+h1, h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    color: #fa87a1;
+}
+
+h1 {
+    text-align: center;
 }
