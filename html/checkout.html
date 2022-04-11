@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/style/checkout_style.css">
     <script src="../js/checkout.js"></script>
 </head>
-<body onload="deliveryMethod()">
+<body>
     <header>
         <div class="header">
             <img src="../../asset/img/logo.svg" alt="logo" class="logo" />
@@ -81,9 +81,9 @@
             
             <div class="select-delivery-method">
                 <label for="">Select Delivery Method</label><br>
-                <input type="radio" id="standard" name="delivery-method" value="standard" checked>
+                <input type="radio" id="standard" name="delivery-method" onclick="deliveryMethod(this);" value="standard" checked>
                 <label id="standardLabel" for="standard" data-end="FREE">Standard </label><br>
-                <input type="radio" id="express" name="delivery-method" value="express">
+                <input type="radio" id="express" name="delivery-method" onclick="deliveryMethod(this);" value="express">
                 <label id="expressLabel" for="express" data-end="MYR 20.00">Express </label>
                 <br>
             </div>
@@ -110,9 +110,9 @@
             <h2>Summary</h2>
             <hr>
             <div class="details">
-                <p>Item Subtotal</p>
-                <p>Shipping <span id="shippingAmount"></span></p>
-                <p>Tax</p>
+                <p>Item Subtotal<span>123</span></p>
+                <p>Shipping<span id="shippingAmount">FREE</span></p>
+                <p>Tax<span>123</span></p>
             </div>
             <hr>
             <p id="total">Total</p>

@@ -1,13 +1,12 @@
-function deliveryMethod(){
-    var deliveryMethod = document.querySelectorAll("delivery-method").value;
-    switch (deliveryMethod){
-        case 'standard':
+function deliveryMethod(selected){
+    switch (selected.value){
+        case "standard":
             document.getElementById("shippingAmount").innerHTML = "FREE";
+            document.getElementById("shippingAmount").style.color = "#FF740F";
             break;
-        case 'express':
+        case "express":
             document.getElementById("shippingAmount").innerHTML = "RM20.00";
+            document.getElementById("shippingAmount").style.color = "#00000091";
             break;
     }
 }
-
-// https://stackoverflow.com/questions/8838648/onchange-event-handler-for-radio-button-input-type-radio-doesnt-work-as-one

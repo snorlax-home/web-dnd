@@ -6,6 +6,7 @@ a.back-to-cart {
 
 h1#title {
     padding-left: 650px;
+    margin-bottom: 10px;
 }
 
 /* Shipping layout */
@@ -13,7 +14,7 @@ div.shipping {
     float: left;
     width: 54%;
     margin-left: 48px;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
 }
 
 div.shipping h2 {
@@ -23,7 +24,7 @@ div.shipping h2 {
 div.shipping .form-group1 label, div.shipping .form-group2 label {
     display: inline-block;
     width: 200px;
-    height: 50px;
+    height: 35px;
     padding-bottom: 10px;
     padding-left: 100px;
 }
@@ -77,11 +78,13 @@ div.summary .details {
     padding-left: 30px;
 }
 
-div.summary .details .shippingAmount {
-    padding-left:50px;
+div.summary .details p span {
+    float: right;
+    padding-right: 30px;
 }
 
 div.summary #total {
     padding-left: 30px;
 }
 
+/* TODO  calc total price */

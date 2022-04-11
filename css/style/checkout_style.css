@@ -113,6 +113,10 @@ div.summary .details {
     font-size: 20px;
 }
 
+div.summary .details span#shippingAmount {
+    color: #FF740F;
+}
+
 div.summary #total {
     font-weight: 700;
     font-size: 20px;
