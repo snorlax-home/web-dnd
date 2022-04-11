@@ -2,6 +2,11 @@ body {
     font-family: "Montserrat";
 }
 
-p {
+h1 {
+    text-align: center;
+}
+
+
+p,ul {
     text-align: justify;
 }

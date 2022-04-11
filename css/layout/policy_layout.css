@@ -15,6 +15,17 @@ h1, h2 {
     color: #fa87a1;
 }
 
-h1 {
-    text-align: center;
+
+/* Mobile Screen Layout */
+@media only screen and (max-width: 414px) {
+    /* TODO Rmb change this */
+    header .header{
+        display:none;
+    }
+
+    section {
+        padding-left: 27px;
+        padding-right: 28px;
+    }
 }
+    
