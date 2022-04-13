@@ -11,6 +11,9 @@
     <script src="../js/checkout.js"></script>
 </head>
 <body onload="calc()">
+    <audio id="alertSFX">
+        <source src="../asset/media/alert.mp3" type="audio/mpeg">
+    </audio>
     <header>
         <div class="header">
             <img src="../../asset/img/logo.svg" alt="logo" class="logo" />
@@ -27,30 +30,28 @@
             <div class="profile"></div>
           </div>
     </header>
-    <!--Add back to cart-->
     <a href="shoppingcart.html" class="back-to-cart">&#60&#160&#160&#160Back to Cart</a>
     <h1 id="title">Checkout</h1>
-    <!-- TODO change this to something workable -->
-    <form>
+    <form name="shippingForm">
         <div class="shipping">
             <h2>Shipping Information</h2>        
             <div class="form-group1">
                 <label for="fname" data-end="*">First name</label>
                 <input type="text" id="fname" name="fname" placeholder="First name" required><br>
             
-            
                 <label for="lname" data-end="*">Last name</label>
                 <input type="text" id="lname" name="lname" placeholder="Last name" required><br>
             
-            
+                
                 <label for="address-line1" data-end="*">Address</label>
-                <input type="text" id="address-line1" name="address" placeholder="Address Line 1" required>
-                <label for="address-line2">&nbsp</label>
-                <input type="text" id="address-line2" name="address" placeholder="Address Line 2">
-                <label for="address-line3">&nbsp</label>
-                <input type="text" id="address-line3" name="address" placeholder="Address Line 3"><br>
+                <input type="text" id="address-line1" name="address-line1" placeholder="Address Line 1" required>
+                <div id="extra-address-line">
+                    <label for="address-line2">&nbsp</label>
+                    <input type="text" id="address-line2" name="address-line2" placeholder="Address Line 2">
+                    <label for="address-line3">&nbsp</label>
+                    <input type="text" id="address-line3" name="address-line3" placeholder="Address Line 3"><br>    
+                </div>
 
-            
                 <label for="City" data-end="*">City</label>
                 <input type="text" id="city" name="city" placeholder="City" required><br>
             
@@ -75,22 +76,22 @@
                 <br>
     
                 <label for ="zipcode" data-end="*">Zipcode</label>
-                <input type="text" id="zipcode" name="zipcode" placeholder="50100" pattern="[0-9]*" required>
+                <input type="text" id="zipcode" name="zipcode" placeholder="50100" required>
                 <br>
             </div>
             
             <div class="select-delivery-method">
                 <label for="">Select Delivery Method</label><br>
-                <input type="radio" id="standard" name="delivery-method" onclick="deliveryMethod(this);" value="standard" checked>
+                <input type="radio" id="standard" name="delivery-method" onclick="deliveryMethod(this);playAudio();" value="standard" checked>
                 <label id="standardLabel" for="standard" data-end="FREE">Standard </label><br>
-                <input type="radio" id="express" name="delivery-method" onclick="deliveryMethod(this);" value="express">
+                <input type="radio" id="express" name="delivery-method" onclick="deliveryMethod(this);playAudio();" value="express">
                 <label id="expressLabel" for="express" data-end="MYR 20.00">Express </label>
                 <br>
             </div>
             
             <br>
             <div class="form-group2">
-                <label for="phone" data-end="*">Phone</label>
+                <label for="phone" data-end="*">Phone Number</label>
                 <input type="tel" id="phone" name="phone" placeholder ="012-3456789" pattern="[0-9]{3}-[0-9]{3}[0-9]{4}" required>
                 <br>
                 <label for="email" data-end="*">Email</label>
@@ -115,7 +116,7 @@
                     <div id="right-side">
                         <span class="price" data-start="RM">2.80</span><br>
                         <span>Qty:1</span><br>
-                        <button class = "delete" onclick="removeItems(event)">Remove</button>
+                        <button class = "delete" onclick="removeItems(event);">Remove</button>
                     </div>
                 </div>
                 <div class = "product">
@@ -124,7 +125,7 @@
                     <div id="right-side">
                         <span class="price" data-start="RM">4.50</span><br>
                         <span>Qty:1</span><br>
-                        <button class = "delete" onclick="removeItems(event)">Remove</button>
+                        <button class = "delete" onclick="removeItems(event);">Remove</button>
                     </div>
                 </div>
                 <div class = "product">
@@ -133,7 +134,7 @@
                     <div id="right-side">
                         <span class="price" data-start="RM">3.99</span><br>
                         <span>Qty:1</span><br>
-                        <button class = "delete" onclick="removeItems(event)">Remove</button>
+                        <button class = "delete" onclick="removeItems(event);">Remove</button>
                     </div>
                 </div>
             </div>
@@ -146,7 +147,7 @@
             <hr>
             <p id="total">Total<span id="totalAmount"></span></p>
         </div>
-            <input type="submit" class="button" value="Continue to Payment">
+            <button type="submit" class="button"  value="Continue to Payment" onclick="validateForm();"><span>Continue to Payment</span></button>
     </form>
 </body>
-</html>
+</html> 
