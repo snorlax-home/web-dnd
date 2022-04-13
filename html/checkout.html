@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/style/checkout_style.css">
     <script src="../js/checkout.js"></script>
 </head>
-<body>
+<body onload="calcTax();calcTotal();">
     <header>
         <div class="header">
             <img src="../../asset/img/logo.svg" alt="logo" class="logo" />
@@ -108,14 +108,23 @@
         </div>
         <div class="summary">
             <h2>Summary</h2>
-            <hr>
-            <div class="details">
-                <p>Item Subtotal<span>123</span></p>
-                <p>Shipping<span id="shippingAmount">FREE</span></p>
-                <p>Tax<span>123</span></p>
+            <div class="products">
+                <img src="../../asset/img/product_img/broccoli.jpg" alt="broccoli">
+                <span id="product_name">Broccoli</span>
+                <div id="right-side">
+                    <span id="price">4.50</span>
+                    <span>Qty:1</span>
+                    <span id="remove">Remove</span>
+                </div>
             </div>
             <hr>
-            <p id="total">Total</p>
+            <div class="details">
+                <p>Item Subtotal<span id="itemSubtotal" data-start="RM">19.08</span></p>
+                <p>Shipping<span id="shippingAmount">FREE</span></p>
+                <p>Tax<span id="taxAmount" data-start="RM"></span></p>
+            </div>
+            <hr>
+            <p id="total">Total<span id="totalAmount"></span></p>
         </div>
             <!--not sure can liddis or not-->
             <input type="submit" class="button" value="Continue to Payment">

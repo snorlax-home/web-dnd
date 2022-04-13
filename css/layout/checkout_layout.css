@@ -69,6 +69,26 @@ div.summary h2 {
     padding-left: 30px;
 }
 
+div.summary {
+    flex-direction: row;
+}
+
+div.summary .products img {
+    width: 100px;
+    padding-left: 30px;
+}
+
+div.summary .products #product_name {
+    vertical-align: top;
+
+}
+
+/*TODO continue from here, make it align vertically*/
+div.summary .products #right-side {
+    float: right;
+    flex-direction: column;
+}
+
 hr {
     margin-left: 10px;
     margin-right: 10px;
@@ -78,7 +98,7 @@ div.summary .details {
     padding-left: 30px;
 }
 
-div.summary .details p span {
+div.summary .details p span, div.summary #total span {
     float: right;
     padding-right: 30px;
 }
@@ -86,5 +106,3 @@ div.summary .details p span {
 div.summary #total {
     padding-left: 30px;
 }
-
-/* TODO  calc total price */
