@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/style/checkout_style.css">
     <script src="../js/checkout.js"></script>
 </head>
-<body onload="calcTax();calcTotal();">
+<body onload="calc()">
     <header>
         <div class="header">
             <img src="../../asset/img/logo.svg" alt="logo" class="logo" />
@@ -31,7 +31,7 @@
     <a href="shoppingcart.html" class="back-to-cart">&#60&#160&#160&#160Back to Cart</a>
     <h1 id="title">Checkout</h1>
     <!-- TODO change this to something workable -->
-    <form action="/action_page.php" method="post">
+    <form>
         <div class="shipping">
             <h2>Shipping Information</h2>        
             <div class="form-group1">
@@ -109,24 +109,43 @@
         <div class="summary">
             <h2>Summary</h2>
             <div class="products">
-                <img src="../../asset/img/product_img/broccoli.jpg" alt="broccoli">
-                <span id="product_name">Broccoli</span>
-                <div id="right-side">
-                    <span id="price">4.50</span>
-                    <span>Qty:1</span>
-                    <span id="remove">Remove</span>
+                <div class = "product">
+                    <img src="../../asset/img/product_img/cabbage.jpg" alt="cabbage">
+                    <span id="product_name">Cabbage</span>
+                    <div id="right-side">
+                        <span class="price" data-start="RM">2.80</span><br>
+                        <span>Qty:1</span><br>
+                        <button class = "delete" onclick="removeItems(event)">Remove</button>
+                    </div>
+                </div>
+                <div class = "product">
+                    <img src="../../asset/img/product_img/broccoli.jpg" alt="broccoli">
+                    <span id="product_name">Broccoli</span>
+                    <div id="right-side">
+                        <span class="price" data-start="RM">4.50</span><br>
+                        <span>Qty:1</span><br>
+                        <button class = "delete" onclick="removeItems(event)">Remove</button>
+                    </div>
+                </div>
+                <div class = "product">
+                    <img src="../../asset/img/product_img/maggi.jpg" alt="maggi">
+                    <span id="product_name">Maggi</span>
+                    <div id="right-side">
+                        <span class="price" data-start="RM">3.99</span><br>
+                        <span>Qty:1</span><br>
+                        <button class = "delete" onclick="removeItems(event)">Remove</button>
+                    </div>
                 </div>
             </div>
             <hr>
             <div class="details">
-                <p>Item Subtotal<span id="itemSubtotal" data-start="RM">19.08</span></p>
+                <p>Item Subtotal<span id="itemSubtotal" data-start="RM"></span></p>
                 <p>Shipping<span id="shippingAmount">FREE</span></p>
                 <p>Tax<span id="taxAmount" data-start="RM"></span></p>
             </div>
             <hr>
             <p id="total">Total<span id="totalAmount"></span></p>
         </div>
-            <!--not sure can liddis or not-->
             <input type="submit" class="button" value="Continue to Payment">
     </form>
 </body>

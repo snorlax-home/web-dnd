@@ -113,10 +113,27 @@ div.summary .details {
     font-size: 20px;
 }
 
-div.summary .details span#itemSubtotal::before, div.summary .details span#taxAmount::before   {
+
+div.summary div.products div#right-side span#price::before, 
+div.summary .details span#itemSubtotal::before, 
+div.summary .details span#taxAmount::before   {
     content: attr(data-start);
 }
 
+div.summary div.products div.product button.delete {
+    color: #159DFF;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    padding-right: 0px;
+}
+
+div.summary div.products div.product button.delete:hover {
+   text-decoration: underline;
+}
 
 div.summary .details span#shippingAmount {
     color: #FF740F;

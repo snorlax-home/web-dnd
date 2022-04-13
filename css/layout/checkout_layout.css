@@ -83,10 +83,14 @@ div.summary .products #product_name {
 
 }
 
-/*TODO continue from here, make it align vertically*/
 div.summary .products #right-side {
     float: right;
-    flex-direction: column;
+    text-align: right;
+    padding-right: 30px;
+}
+
+div.summary .products .product{
+    padding-bottom: 10px;
 }
 
 hr {

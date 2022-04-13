@@ -3,15 +3,27 @@ function deliveryMethod(selected){
         case "standard":
             document.getElementById("shippingAmount").innerHTML = "FREE";
             document.getElementById("shippingAmount").style.color = "#FF740F";
-            calcTotal();
+            calc();
             break;
         case "express":
             document.getElementById("shippingAmount").innerHTML = "RM20.00";
             document.getElementById("shippingAmount").style.color = "#000000";
-            calcTotal();
+            calc();
             break;
     }
 }
+
+function calcItemSubtotal(){
+    var price = document.getElementsByClassName("price");
+    var subtotal = 0;
+
+    for (var i = 0; i < price.length; i++) {
+        subtotal += parseFloat(price[i].innerText);
+    }
+
+    document.getElementById("itemSubtotal").innerHTML = subtotal.toFixed(2);
+}
+
 
 function calcTax() {
     var total = document.getElementById("itemSubtotal").innerHTML;
@@ -34,4 +46,16 @@ function calcTotal() {
     }
     var totalAmount = (parseFloat(total) + parseFloat(tax) + parseFloat(shipping)).toFixed(2);
     document.getElementById("totalAmount").innerHTML = "RM" + totalAmount;
+}
+
+function removeItems(event){
+    var element = event.target.parentNode.parentNode;
+    element.remove();
+    calc();
+}
+
+function calc(){
+    calcItemSubtotal();
+    calcTax();
+    calcTotal();
 }
