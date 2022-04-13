@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="../css/overall.css">
     <link rel="stylesheet" href="../css/layout/checkout_layout.css">
     <link rel="stylesheet" href="../css/style/checkout_style.css">
+    <script src="../js/checkout.js"></script>
 </head>
-<body>
+<body onload="calc()">
+    <audio id="alertSFX">
+        <source src="../asset/media/alert.mp3" type="audio/mpeg">
+    </audio>
     <header>
         <div class="header">
             <img src="../../asset/img/logo.svg" alt="logo" class="logo" />
@@ -26,30 +30,32 @@
             <div class="profile"></div>
           </div>
     </header>
-    <!--Add back to cart-->
     <a href="shoppingcart.html" class="back-to-cart">&#60&#160&#160&#160Back to Cart</a>
     <h1 id="title">Checkout</h1>
-    <!-- rmb change -->
-    <form action="?.js" method="post">
+    <form name="shippingForm">
         <div class="shipping">
             <h2>Shipping Information</h2>        
             <div class="form-group1">
-                <label for="fname">First name*</label>
+                <label for="fname" data-end="*">First name</label>
                 <input type="text" id="fname" name="fname" placeholder="First name" required><br>
             
-            
-                <label for="lname">Last name*</label>
+                <label for="lname" data-end="*">Last name</label>
                 <input type="text" id="lname" name="lname" placeholder="Last name" required><br>
             
-            
-                <label for="address">Address*</label>
-                <input type="text" id="address" name="address" placeholder="Address" required><br>
-            
-            
-                <label for="City">City*</label>
+                
+                <label for="address-line1" data-end="*">Address</label>
+                <input type="text" id="address-line1" name="address-line1" placeholder="Address Line 1" required>
+                <div id="extra-address-line">
+                    <label for="address-line2">&nbsp</label>
+                    <input type="text" id="address-line2" name="address-line2" placeholder="Address Line 2">
+                    <label for="address-line3">&nbsp</label>
+                    <input type="text" id="address-line3" name="address-line3" placeholder="Address Line 3"><br>    
+                </div>
+
+                <label for="City" data-end="*">City</label>
                 <input type="text" id="city" name="city" placeholder="City" required><br>
             
-                <label for="address">State*</label>
+                <label for="address" data-end="*">State</label>
                 <select name="state" id="state" required>
                     <option value="johor">Johor</option>
                     <option value="kedah">Kedah</option>
@@ -69,35 +75,31 @@
                 </select>
                 <br>
     
-                <label for ="zipcode">Zipcode*</label>
-                <input type="text" id="zipcode" name="zipcode" placeholder="Zipcode" required>
+                <label for ="zipcode" data-end="*">Zipcode</label>
+                <input type="text" id="zipcode" name="zipcode" placeholder="50100" required>
                 <br>
             </div>
             
             <div class="select-delivery-method">
                 <label for="">Select Delivery Method</label><br>
-                <input type="radio" id="standard" name="delivery-method" value="standard" checked>
-                <label for="standard">Standard FREE</label><br>
-                <input type="radio" id="express" name="delivery-method" value="express">
-                <label for="express">Express MYR 20.00</label>
+                <input type="radio" id="standard" name="delivery-method" onclick="deliveryMethod(this);playAudio();" value="standard" checked>
+                <label id="standardLabel" for="standard" data-end="FREE">Standard </label><br>
+                <input type="radio" id="express" name="delivery-method" onclick="deliveryMethod(this);playAudio();" value="express">
+                <label id="expressLabel" for="express" data-end="MYR 20.00">Express </label>
                 <br>
             </div>
             
             <br>
             <div class="form-group2">
-                <label for="phone">Phone*</label>
-                <input type="text" id="phone" name="phone" placeholder ="(nnn) nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required>
+                <label for="phone" data-end="*">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder ="012-3456789" pattern="[0-9]{3}-[0-9]{3}[0-9]{4}" required>
                 <br>
-            
-                <!--might need pattern-->
-                <label for="email">Email*</label>
-                <input type="text" id="email" name ="email" placeholder ="example@mail.com" required>
+                <label for="email" data-end="*">Email</label>
+                <input type="email" id="email" name ="email" placeholder ="example@mail.com" required>
                 <br>            
             </div>
-            
-            <!--not sure label correct or not-->
             <div class="checkbox">
-                <input type="checkbox" id="confirmation" name="confirmation" value="confirm">
+                <input type="checkbox" id="confirmation" name="confirmation" value="confirm" required>
                 <div id="text">
                     <p>
                         I have read and consent to ShoppyMart processing my information and in accordance with the <a href="policy/tnc.html" id="checkBox">Terms and Conditions</a> and <a href="policy/privacy_policy.html" id="checkBox">Privacy Policy</a>.
@@ -107,19 +109,45 @@
         </div>
         <div class="summary">
             <h2>Summary</h2>
-            <hr>
-            <div class="details">
-                <p>Item Subtotal</p>
-                <p>Shipping</p>
-                <p>Tax</p>
+            <div class="products">
+                <div class = "product">
+                    <img src="../../asset/img/product_img/cabbage.jpg" alt="cabbage">
+                    <span id="product_name">Cabbage</span>
+                    <div id="right-side">
+                        <span class="price" data-start="RM">2.80</span><br>
+                        <span>Qty:1</span><br>
+                        <button class = "delete" onclick="removeItems(event);">Remove</button>
+                    </div>
+                </div>
+                <div class = "product">
+                    <img src="../../asset/img/product_img/broccoli.jpg" alt="broccoli">
+                    <span id="product_name">Broccoli</span>
+                    <div id="right-side">
+                        <span class="price" data-start="RM">4.50</span><br>
+                        <span>Qty:1</span><br>
+                        <button class = "delete" onclick="removeItems(event);">Remove</button>
+                    </div>
+                </div>
+                <div class = "product">
+                    <img src="../../asset/img/product_img/maggi.jpg" alt="maggi">
+                    <span id="product_name">Maggi</span>
+                    <div id="right-side">
+                        <span class="price" data-start="RM">3.99</span><br>
+                        <span>Qty:1</span><br>
+                        <button class = "delete" onclick="removeItems(event);">Remove</button>
+                    </div>
+                </div>
             </div>
             <hr>
-            <p id="total">Total</p>
+            <div class="details">
+                <p>Item Subtotal<span id="itemSubtotal" data-start="RM"></span></p>
+                <p>Shipping<span id="shippingAmount">FREE</span></p>
+                <p>Tax<span id="taxAmount" data-start="RM"></span></p>
+            </div>
+            <hr>
+            <p id="total">Total<span id="totalAmount"></span></p>
         </div>
-            <!--not sure can liddis or not-->
-            <input type="button" class="button" value="Continue to Payment">
+            <button type="submit" class="button"  value="Continue to Payment" onclick="validateForm();"><span>Continue to Payment</span></button>
     </form>
-    
-    
 </body>
-</html>
+</html> 
