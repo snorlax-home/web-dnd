@@ -21,8 +21,148 @@
         </div>
       </div>
 
+      <div class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="" class="side-option">Category</a>
+        <a href="" class="side-option">About Us</a>
+        <a href="" class="side-option">FAQ</a>
+        <a href="" class="side-option">Cart</a>
+      </div>
+
+      <button class="openbtn" onclick="openNav()">☰</button>
+
       <div class="profile"></div>
     </div>
+
+    <script>
+      function openNav() {
+        document.querySelector("body > div > div.sidepanel").style.width =
+          "250px";
+      }
+
+      function closeNav() {
+        document.querySelector("body > div > div.sidepanel").style.width = "0";
+      }
+    </script>
+
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+
+      div.header .logo {
+        padding: 15px;
+      }
+
+      .header {
+        height: 65px;
+        width: 100%;
+        background-color: #fa87a1;
+        display: flex;
+        align-items: center;
+      }
+
+      div.header .nav {
+        margin-left: auto;
+        margin-right: 65px;
+      }
+
+      div.header .link {
+        padding: 0 15px;
+        cursor: pointer;
+      }
+
+      div.header .links {
+        font-family: "Montserrat";
+        font-weight: 900;
+        color: #ffffff;
+        font-size: 18px;
+        display: flex;
+        margin-left: auto;
+        margin-right: 65px;
+      }
+
+      div.header .profile {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: 0;
+        background-image: url("../asset/img/icons/profile.svg");
+        display: flex;
+      }
+
+      .sidepanel,
+      .openbtn {
+        display: none;
+      }
+
+      @media screen and (max-width: 600px) {
+        div.header .link {
+          display: none;
+        }
+
+        .sidepanel {
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          height: 200px;
+          top: 0;
+          right: 0;
+          background-color: #fff3e6;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+          display: block;
+        }
+
+        .sidepanel a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #fa87a1;
+          display: block;
+          transition: 0.3s;
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 600;
+        }
+
+        .sidepanel a:hover {
+          color: #f52153;
+        }
+
+        .sidepanel .closebtn {
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+        }
+
+        .openbtn {
+          position: absolute;
+          right: 60px;
+          display: block;
+          font-size: 20px;
+          cursor: pointer;
+          background-color: #fa87a1;
+          color: white;
+          padding: 5px 10px;
+          border: solid 2px white;
+          border-radius: 20px;
+        }
+
+        .openbtn:hover {
+          background-color: white;
+          color: #f52153;
+        }
+      }
+    </style>
 
     <div class="main">
       <!-- Edit Profile -->
@@ -41,7 +181,12 @@
           <br />
           <label for="gender">Gender</label>
           <div id="gender">
-            <input name="gender" type="radio" value="male" class="genderRadioButton" />
+            <input
+              name="gender"
+              type="radio"
+              value="male"
+              class="genderRadioButton"
+            />
             <label for="gender">Male</label>
             <input
               name="gender"
@@ -106,53 +251,8 @@
           margin: 0;
         }
 
-        div.header .logo {
-          padding: 15px;
-        }
-
-        .header {
-          height: 65px;
-          width: 100%;
-          background-color: #fa87a1;
-          display: flex;
-          align-items: center;
-        }
-
-        div.header .nav {
-          margin-left: auto;
-          margin-right: 65px;
-        }
-
-        div.header .link {
-          padding: 0 15px;
-          cursor: pointer;
-        }
-
-        div.header .links {
-          font-family: "Montserrat";
-          font-weight: 900;
-          color: #ffffff;
-          font-size: 18px;
-          display: flex;
-          margin-left: auto;
-          margin-right: 65px;
-        }
-
-        div.header .profile {
-          position: absolute;
-          top: 15px;
-          right: 15px;
-          width: 35px;
-          height: 35px;
-          border-radius: 50%;
-          margin-left: auto;
-          margin-right: 0;
-          background-image: url("../asset/img/icons/profile.svg");
-          display: flex;
-        }
-
         .footer {
-          position: static;
+          position: relative;
           bottom: 0;
           height: 200px;
           width: 100%;
@@ -161,7 +261,7 @@
         }
 
         div.footer .copyright {
-          position: static;
+          position: absolute;
           bottom: 0;
           padding: 15px;
         }
@@ -179,8 +279,8 @@
         }
         div.footer .address {
           position: absolute;
-          bottom: 0;
-          right: 0;
+          right: 20px;
+          top: 20px;
         }
       </style>
     </div>
