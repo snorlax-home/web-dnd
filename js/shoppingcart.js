@@ -12,10 +12,16 @@ function decrement(event){
     if (quantity.value >= 1) {
         quantity.value--;            
     }
+
+    calcTotalPrice(event);
+    calcFinalPrice();
 }
 
 function increment(event){
     event.target.parentNode.children[1].value++;
+
+    calcTotalPrice(event);
+    calcFinalPrice();
 }
 
 function checkMainCheckBox(){
@@ -31,6 +37,9 @@ function checkMainCheckBox(){
     else{
         mainCheckBox.checked = false;
     }
+
+    calcTotalItems();
+    calcFinalPrice();
 }
 
 function checkAllCheckBox(event){
@@ -48,6 +57,8 @@ function checkAllCheckBox(event){
         checkBox2.checked = false;
         checkBox3.checked = false;
     }
+    calcTotalItems();
+    calcFinalPrice();
 }
 
 function calcFinalPrice(){
