@@ -72,7 +72,9 @@
           📞<a class="phone-num" href="tel:6031234567">+60 3-123 4567</a>
           <br />
           <br />
-          📧<a class="email" href="mailto:contact@shoppymart.com">contact@shoppymart.com</a>
+          📧<a class="email" href="mailto:contact@shoppymart.com"
+            >contact@shoppymart.com</a
+          >
         </div>
       </div>
       <div class="sendEnquiry">
@@ -84,7 +86,7 @@
           </p>
         </div>
         <div class="enquiry-form">
-          <form>
+          <form onsubmit="submitEnquiry()">
             <label for="email">Your Email</label>
             <br />
             <input type="email" name="email" id="email" />
@@ -100,7 +102,7 @@
             />
             <br />
             <br />
-            <input type="submit" value="SUBMIT" onclick="submitEnquiry()" />
+            <input type="submit" value="SUBMIT" />
           </form>
         </div>
       </div>
