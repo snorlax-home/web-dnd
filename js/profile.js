@@ -88,3 +88,14 @@ function updateUserInfo() {
 
   console.log(userName + email + contactNumber + gender + dob);
 }
+
+// Check is user login
+function checkLogin() {
+  let isLoggedIn = getCookie("isLoggedIn");
+  if (isLoggedIn != "true") {
+    alert("Please Sign Up!");
+    window.location.replace("./signup.html");
+  }
+}
+
+checkLogin()
