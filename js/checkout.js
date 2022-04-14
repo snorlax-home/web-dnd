@@ -66,59 +66,49 @@ function playAudio(){
 }
 
 function validateForm(){
-    if(document.shippingForm.fname.value == "") {
-        document.shippingForm.fname.focus() ;
-        return false;
-    }
-
-    if(document.shippingForm.lname.value == "") {
-        document.shippingForm.lname.focus() ;
-        return false;
-    }
-
-    if(document.shippingForm.address-line1.value == "") {
-        document.shippingForm.address-line1.focus() ;
-        return false;
-    }
-
-    if(document.shippingForm.city.value == "") {
-        document.shippingForm.city.focus() ;
-        return false;
-    }
-
-    const zipcodeFormat = /^[0-9]$/;
-
-    if(document.shippingForm.zipcode.value == "") {
-        document.shippingForm.zipcode.focus() ;
-        return false;
-    } else if (zipcodeFormat.test(document.shippingForm.zipcode.value) == false) {
-        document.shippingForm.zipcode.focus() ;
-        return false;
-    }
-
-    const correctPhoneFormat = /^\d{10}$/;
-
-    if(document.shippingForm.phone.value == "") {
-        document.shippingForm.phone.focus() ;
-        return false;
-    } else if(correctPhoneFormat.test(document.shippingForm.phone.value) == false) {
-        return false;
-    }
-
+    var flag = true;
+    const zipcodeFormat = /^[0-9]{5}$/;
+    const correctPhoneFormat = /[0-9]{3}-[0-9]{7}$/;
     const correctEmailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    
-    if(document.shippingForm.email.value == "") {
-        document.shippingForm.email.focus() ;
-        return false;
-    }  else if (correctEmailFormat.test(document.shippingForm.email.value) == false){
-        return false;
+
+    if(document.forms["shippingForm"]["fname"].value == "") {
+        alert("Please enter your first name!");
+        flag = false;
+    } else if (document.forms["shippingForm"]["lname"].value == "") {
+        alert("Please enter your last name!");
+        flag = false;
+    } else if(document.forms["shippingForm"]["address-line1"].value == "") {
+        alert("Please enter your address!");
+        flag = false;
+    } else if(document.forms["shippingForm"]["city"].value == "") {
+        alert("Please enter your city!");
+        flag = false;
+    } else if(document.forms["shippingForm"]["zipcode"].value == "") {
+        alert("Please enter your zipcode!");
+        flag = false;
+    } else if (zipcodeFormat.test(document.forms["shippingForm"]["zipcode"].value) == false) {
+        alert("Please enter a valid zipcode!");
+        flag = false;
+    } else if(document.forms["shippingForm"]["phone"].value == "") {
+        alert("Please enter your phone number!");
+        flag = false;
+    } else if(correctPhoneFormat.test(document.forms["shippingForm"]["phone"].value) == false) {
+        alert("Please enter a valid phone number!");
+        flag = false;
+    } else if(document.forms["shippingForm"]["email"].value == "") {
+        alert("Please enter your email!");
+        flag = false;
+    }  else if (correctEmailFormat.test(document.forms["shippingForm"]["email"].value) == false){
+        alert("Please enter a valid email!");
+        flag = false;
+    } else if (document.forms["shippingForm"]["confirmation"].checked == false) {
+        alert("Please check the box to proceed!");
+        flag = false;
     }
 
-    if(document.shippingForm.confirmation.checked == false) {
-        document.shippingForm.confirmation.focus() ;
-        return false;
+    if (flag == true) {
+        setTimeout(function() {window.location = "payment.html" });
+    } else {
+        return flag;
     }
-
-    //replace this and test this
-    window.location.href = ".html";
 }
