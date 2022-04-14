@@ -1,0 +1,46 @@
+.mid
+{
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.bar_pink
+{
+    background-color: #FA87A1;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.bar_dark
+{
+    background-color: #9C7B83;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.Secondbar_pink
+{
+    background-color: #FA87A1;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.topbar
+{
+    background-color: #FA87A1;
+    
+    
+}
+
+.midbar
+{
+    background-color: #F2ABBB;
+}
+
+.totalbar
+{
+    background-color: #FA87A1;
+}

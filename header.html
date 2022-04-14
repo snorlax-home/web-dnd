@@ -1,5 +1,5 @@
 <div class="header">
-  <img src="asset/img/logo.svg" alt="logo" class="logo" />
+  <img src="../asset/img/logo.svg" alt="logo" class="logo" />
 
   <div class="nav">
     <div class="links">
@@ -10,8 +10,28 @@
     </div>
   </div>
 
+  <div class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="" class="side-option">Category</a>
+    <a href="" class="side-option">About Us</a>
+    <a href="" class="side-option">FAQ</a>
+    <a href="" class="side-option">Cart</a>
+  </div>
+
+  <button class="openbtn" onclick="openNav()">☰</button>
+
   <div class="profile"></div>
 </div>
+
+<script>
+  function openNav() {
+    document.querySelector("body > div > div.sidepanel").style.width = "250px";
+  }
+
+  function closeNav() {
+    document.querySelector("body > div > div.sidepanel").style.width = "0";
+  }
+</script>
 
 <style>
   body {
@@ -60,7 +80,74 @@
     border-radius: 50%;
     margin-left: auto;
     margin-right: 0;
-    background-image: url("asset/img/icons/profile.svg");
+    background-image: url("../asset/img/icons/profile.svg");
     display: flex;
+  }
+
+  .sidepanel,
+  .openbtn {
+    display: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    div.header .link {
+      display: none;
+    }
+
+    .sidepanel {
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      height: 200px;
+      top: 0;
+      right: 0;
+      background-color: #fff3e6;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+      display: block;
+    }
+
+    .sidepanel a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #fa87a1;
+      display: block;
+      transition: 0.3s;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 600;
+    }
+
+    .sidepanel a:hover {
+      color: #f52153;
+    }
+
+    .sidepanel .closebtn {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+    }
+
+    .openbtn {
+      position: absolute;
+      right: 60px;
+      display: block;
+      font-size: 20px;
+      cursor: pointer;
+      background-color: #fa87a1;
+      color: white;
+      padding: 5px 10px;
+      border: solid 2px white;
+      border-radius: 20px;
+    }
+
+    .openbtn:hover {
+      background-color: white;
+      color: #f52153;
+    }
   }
 </style>
