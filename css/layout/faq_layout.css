@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin-bottom: 25px;
+}
+
+header > div > a > img.logo {
+  padding: 15px 0px 0px 15px;
+}
+
+div.section_1 {
+  padding-top: 70px;
+  padding-bottom: 120px;
+}
+
+div.section_1 > form {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+
+div.section_1 > form > input {
+  margin: auto;
+}
+
+div.question {
+  margin: auto;
+}
