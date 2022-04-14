@@ -5,6 +5,10 @@ h1{
     padding-bottom: 10px;
 }
 
+body{
+    margin: 0px auto;
+}
+
 .cart_bar{
     display:flex;
     align-items: center;
@@ -175,4 +179,92 @@ h1{
     font-size: 14px;
 }
 
+/* Mobile Screen Layout */
+@media only screen and (max-width: 414px) {
+    h1{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+    }
+       
+    .container{
+        margin-right:10px;
+        margin-left:10px;
+    }
+ 
+    .product_img img{
+        width:50px;
+    }
 
+    .product_head{
+        width: 46%;
+        padding-left: 32px; 
+     }
+     
+    .price_head{
+        width: 15%;
+        text-align: center;
+     }
+     
+    .quantity_head{
+        width: 15%;
+        text-align: center;
+    }
+    
+    .total_price_head{
+        width: 10%;
+        text-align:center;
+    }
+    
+    .action{
+        width:12%;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .product_img{
+        padding: 0 50px 0 12px;
+        display:flex;
+        min-width: 58px;
+        box-sizing: border-box;
+     }
+    
+    .product_name{
+        width:45%;          
+     }
+     
+    .price{
+        width:10%;
+        flex-direction: column;
+        padding-left:40px;
+        padding-right:20px;
+     }
+     
+    .quantity{
+        width: 17%;
+    }
+    
+    .total_price{
+        width:10%;
+        padding-right: 25px;
+    }
+ 
+    .delete{
+        padding-right:35px;
+    }
+        
+    .select_all_div{
+        width:30%;
+        height:10%;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .final_price{
+        width:20%;
+    }
+
+    .checkout_button{
+        padding:8px 8px;
+    }
+}

@@ -85,7 +85,7 @@ function calcFinalPrice(){
     if (checkBox3.checked) {
         finalPrice += parseFloat(price3);
     }
-       
+    
     finalPriceHTML.innerHTML = "RM" + finalPrice.toFixed(2);
 }
 

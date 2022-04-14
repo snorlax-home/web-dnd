@@ -8,13 +8,11 @@ html {
 
 body {
    min-height: 100%;   
-   margin: 0px auto;
    min-width: 100%;
    max-width: 100%;   
    width: 100%;
-   cursor: text;
-    border-radius: 0;
-    -webkit-appearance: none;
+   border-radius: 0;
+   -webkit-appearance: none;
 }
 
 h1{
@@ -84,10 +82,78 @@ h1{
    color:white;
    border:rgb(250, 135, 161);
    cursor:pointer;
+   font-size: 14px;
 }
 
 .checkout_button:hover{
    background-color: white;
    color:black;
+}
+
+@media only screen and (max-width: 414px) {  
+   h1{
+      font-size: 25px;
+   }
+   
+   .main{
+      font-size: 12px;
+   }
+
+   .input{
+      width: 20px;
+      height: 20px;
+      font-size: 12px;
+   }
+    
+   .checkbox{
+      width: 16px;
+      height: 16px;
+      cursor:pointer
+   }
+   
+   .subtrate{
+      width:20px;
+      height: 20px;
+   }
+   
+   .add{
+      width:20px;
+      height: 20px;
+   }
+   .product_name{
+      font-size:12px;
+   }
+
+   .price{
+      font-size:12px;
+   }
+
+   .total_price{
+      font-size: 12px;
+   }
+   
+   .delete{
+      font-size:12px;
+   }
+
+   .checkout{
+      font-size:17px
+   }
+   
+   .select_all{
+      font-size:12px;
+   }
+   
+   .total_items{
+      font-size:12px;
+   }
+
+   .final_price{
+      font-size: 12px;
+   }
+
+   .checkout_button{
+      font-size: 12px;
+   }
 }
  
