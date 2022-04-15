@@ -143,10 +143,10 @@ body {
   font-family: 'Montserrat';
 }
 /* Header Styles */
-div.header .logo {
+div.header a .logo {
   height: 40px;
   width: 161px;
-  margin-left: 3%;
+  margin-left: 7%;
 }
 
 .header {
@@ -277,9 +277,11 @@ div.footer .copyright {
 }
 
 div.footer .links {
+  position: absolute;
+  right: 400px;
+  top: 10px;
   height: 100px;
   padding: 15px;
-  padding-left: 25px;
   align-content: space-between;
 }
 
@@ -298,6 +300,10 @@ div.footer .address {
 }
 
 @media screen and (max-width: 414px) {
+  div.footer .links {
+    right: 245px;
+  }
+
   div.footer .link {
     font-size: 12px;
   }

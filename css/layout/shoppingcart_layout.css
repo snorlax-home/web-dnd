@@ -196,26 +196,6 @@ body{
         width:50px;
     }
 
-    .product_head{
-        width: 46%;
-        padding-left: 32px; 
-     }
-     
-    .price_head{
-        width: 15%;
-        text-align: center;
-     }
-     
-    .quantity_head{
-        width: 15%;
-        text-align: center;
-    }
-    
-    .total_price_head{
-        width: 10%;
-        text-align:center;
-    }
-    
     .action{
         width:12%;
         text-align: center;
@@ -229,14 +209,16 @@ body{
         box-sizing: border-box;
      }
     
+
+
     .product_name{
-        width:45%;          
+        width:20%;          
      }
      
     .price{
         width:10%;
         flex-direction: column;
-        padding-left:40px;
+        padding-left:10px;
         padding-right:20px;
      }
      
@@ -246,7 +228,7 @@ body{
     
     .total_price{
         width:10%;
-        padding-right: 25px;
+        padding-right: 20px;
     }
  
     .delete{
@@ -255,9 +237,6 @@ body{
         
     .select_all_div{
         width:30%;
-        height:10%;
-        text-align: center;
-        justify-content: center;
     }
     
     .final_price{
