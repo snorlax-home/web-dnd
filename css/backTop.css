@@ -56,3 +56,14 @@
     transform: scale3d(0.3, 0.3, 0.3);
   }
 }
+
+@media only screen and (max-width: 414px) {
+  #back-to-top-btn {
+    bottom: 36px;
+    right: 42px;
+    font-size: 32px;
+    width: 54px;
+    height: 54px;
+    border: 4px solid #fa87a1;
+  }
+}

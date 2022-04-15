@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../../css/overall.css"/>
     <link rel="stylesheet" href="../css/layout/payment_layout.css">
     <link rel="stylesheet" href="../css/style/payment_style.css">
+    <script src="../js/payment.js"></script>    
+
 </head>
 <body>
     <header>
@@ -22,16 +24,26 @@
             </div>
         </div>
 
-    </header>
+    </header> 
+
+    <div id ="Box" class = "popUpBox">
+
+        <div class = "BoxContent">
+            <span class="close">&times;</span>
+            <p>Payment is processing...</p>
+        </div>
+
+    </div>
     
     <p class = mid>Payment Method</p>
-    <div class = bar_pink> Online Banking  </div>
-    <div class = bar_dark> Maybank</div>
-    <div class = bar_dark> HongLeong Bank </div>
+    <button class = bar_pink > Online Banking  </button>
+    <button id = button1 class="paymentbutton" onclick="ChoosePayment1()"> Maybank</button>
+    <button id = button2 class="paymentbutton" onclick="ChoosePayment2()"> HongLeong Bank </button>
 
-    <div class = Secondbar_pink> Credit/ Debit Card </div>
-    <div class = bar_dark> *4428 </div>
-    <div class = bar_dark> *4438 </div>
+
+    <button class = Secondbar_pink>Credit/ Debit Card</button>
+    <button id = button3 class="paymentbutton" onclick="ChoosePayment3()">*4428</button>
+    <button id = button4 class="paymentbutton" onclick="ChoosePayment4()">*4438</button>
 
     <div class = topbar></div>
 
@@ -67,10 +79,15 @@
     <div class = totalbar>
         <div class = container>
             <p class = total>Total(product)<br><br>Total</p>
-            <p class = quantity>x1</p>
+            <p class = totalprice>RM180.00<br>(Delivery fee) + RM6.00<br>RM186.00</p>
+        </div>
+
+        <div>
+            <button class="button" onclick="confirm()">Confirm</button>
         </div>
     </div>
     
+
 
 </body>
 </html>

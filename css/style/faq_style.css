@@ -16,8 +16,6 @@ section.section_1 > h1 {
 }
 
 section.section_1 > form > input {
-  width: 65%;
-  height: 80px;
   border: 1px solid white;
   font-size: 28px;
   text-indent: 30px;
@@ -39,13 +37,10 @@ div.question {
   border-radius: 25px;
   box-shadow: 2px 3px 5px #00000029;
   background-color: #fff3e6;
-  width: 70%;
-  height: 236px;
   transition: transform 0.5s, opacity 0.5s;
 }
 
 div.question > h3 {
-  text-indent: 24px;
   font-size: 28px;
 }
 
@@ -58,4 +53,30 @@ div.question > p {
 .question-hidden {
   opacity: 0;
   transform: translateY(10rem);
+}
+
+@media only screen and (max-width: 414px) {
+  section.section_1 > h1 {
+    font-weight: 750;
+    text-align: center;
+    font-size: 33px;
+    color: white;
+  }
+
+  section.section_1 > form > input {
+    font-size: 20px;
+    text-indent: 12px;
+  }
+
+  section.section_2 > h2 {
+    font-size: 28px;
+  }
+
+  div.question > h3 {
+    font-size: 24px;
+  }
+
+  div.question > p {
+    font-size: 20px;
+  }
 }
