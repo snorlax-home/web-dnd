@@ -11,21 +11,40 @@ header > div > a > img.logo {
   padding: 15px 0px 0px 15px;
 }
 
-div.section_1 {
+section.section_1 {
   padding-top: 70px;
   padding-bottom: 120px;
 }
 
-div.section_1 > form {
+section.section_1 > h1 {
+  padding-bottom: 8px;
+}
+
+section.section_1 > form {
   display: flex;
   align-items: center;
   padding-top: 20px;
 }
 
-div.section_1 > form > input {
+section.section_1 > form > input {
   margin: auto;
+}
+
+section.section_2 > h2 {
+  padding-bottom: 8px;
 }
 
 div.question {
   margin: auto;
+  margin-bottom: 120px;
+}
+
+div.question > h3 {
+  padding-top: 12px;
+}
+
+div.question > p {
+  margin-right: 12px;
+  padding-top: 16px;
+  padding-left: 24px;
 }

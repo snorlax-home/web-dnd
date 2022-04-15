@@ -4,19 +4,18 @@ body {
   font-family: 'Montserrat';
 }
 
-div.section_1 {
+section.section_1 {
   background-color: #fa87a1;
 }
 
-div.section_1 > h1 {
-  padding-bottom: 8px;
+section.section_1 > h1 {
   font-weight: 750;
   text-align: center;
   font-size: 64px;
   color: white;
 }
 
-div.section_1 > form > input {
+section.section_1 > form > input {
   width: 65%;
   height: 80px;
   border: 1px solid white;
@@ -24,12 +23,11 @@ div.section_1 > form > input {
   text-indent: 30px;
 }
 
-div.section_1 > form > input:focus {
+section.section_1 > form > input:focus {
   outline: none;
 }
 
-div.section_2 > h2 {
-  padding-bottom: 8px;
+section.section_2 > h2 {
   font-weight: 650;
   text-align: center;
   font-size: 48px;
@@ -42,18 +40,22 @@ div.question {
   box-shadow: 2px 3px 5px #00000029;
   background-color: #fff3e6;
   width: 70%;
-  height: 224px;
-  margin-bottom: 120px;
+  height: 236px;
+  transition: transform 0.5s, opacity 0.5s;
 }
 
 div.question > h3 {
-  padding-top: 12px;
   text-indent: 24px;
   font-size: 28px;
 }
 
 div.question > p {
-  padding-top: 16px;
-  padding-left: 24px;
   font-size: 24px;
+  line-height: 175%;
+  word-spacing: 3px;
+}
+
+.question-hidden {
+  opacity: 0;
+  transform: translateY(10rem);
 }
