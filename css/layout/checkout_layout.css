@@ -123,11 +123,6 @@ div.summary #total {
 
 /* Mobile Screen Layout */
 @media only screen and (max-width: 414px) {
-    /* TODO Rmb change this */
-    header .header{
-        display:none;
-    }
-
     a.back-to-cart {
         float: none;
         padding-left: 23px;

@@ -11,6 +11,7 @@ body {
 div.header .logo {
   height: 40px;
   width: 161px;
+  padding-left: 10px;
 }
 
 .header {
@@ -62,7 +63,7 @@ div.header .profile {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 414px) {
   div.header .link {
     display: none;
   }
@@ -124,7 +125,7 @@ div.header .profile {
   }
 }
 
-/* Footer Styles Dun use yet*/
+/* Footer Styles*/
 .footer {
   position: relative;
   bottom: 0;
@@ -132,6 +133,7 @@ div.header .profile {
   width: 100%;
   background-color: #fa87a1;
   color: white;
+  margin-top: 10px;
 }
 
 div.footer .copyright {
@@ -156,3 +158,13 @@ div.footer .address {
   right: 20px;
   top: 20px;
 }
+
+@media screen and (max-width: 414px) {
+  div.footer div.links a {
+    font-size: 15px;
+  }
+  div.footer .address {
+    font-size: 13px;
+  }
+}
+
