@@ -14,7 +14,6 @@ body{
     width: 100%;
 }
 
-
 h2{
     text-align: center;
     padding-top:50px;
@@ -31,4 +30,11 @@ h2{
     flex-wrap: wrap;
     justify-content: center;
     padding-top:10px
-  }
+}
+
+/* Mobile Screen Layout */
+@media only screen and (max-width: 414px) {
+    .categories > img{
+        width:390px;
+    }
+}
