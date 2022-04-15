@@ -5,13 +5,42 @@
 
 .banner button
 {
+    
     border-radius: 50%;
 
 }
+
+.box img
+{
+    border: 5px solid #555;
+}
+
+.box p
+{
+    font-size: 22px;
+}
+
+
 
 .banner button:hover
 {
     background-color: #FDA4BA !important;
     text-decoration: none;
     cursor: pointer;
+}
+
+.tilte1
+{
+    font-size: x-large;
+    border: 0px;
+    background: rgb(255, 243, 230);
+    border-radius: 50px 0px 0px 0px
+}
+
+.tilte2
+{
+    font-size: x-large;
+    border: 0px;
+    background-color: #FA87A1;
+    border-radius: 0px 50px 0px 0px
 }

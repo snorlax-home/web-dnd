@@ -1,12 +1,29 @@
+footer
+{
+    position: absolute; 
+    top: 1100px; 
+    width: 100%;
+}
+
 .box
 {
     position: absolute;
-    top:500px;
-    right:430px;
-    border-radius: 25px;
+    margin-top: 80px;
+    margin-left: 31%;
+    border-radius: 0px 0px 50px 50px;
     padding: 20px;
-    width: 600px;
-    height: 500px;
+    width: 38%;
+    height: 320px;
+}
+
+.box img
+{
+    height: 300px;
+    width: 200px;
+    float: left;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 .banner 
@@ -60,4 +77,45 @@
     border-radius: 50%;
     height: 30px;
     width: 30px;
+}
+
+.tilte1
+{
+    margin-top: 30px;
+    width: 20%;
+    height: 50px;
+    position: absolute;
+    margin-left: 31%;
+    border: 0px;
+    background: rgb(255, 243, 230);
+    border-radius: 50px 0px 0px 0px
+}
+
+.tilte2
+{
+    margin-top: 30px;
+    width: 20%;
+    height: 50px;
+    position: absolute;
+    margin-left: 51%;
+    border: 0px;
+    background-color: #FA87A1;
+    border-radius: 0px 50px 0px 0px
+}
+
+.tilte1:hover,.tilte2:hover
+{
+    background-color: #FDA4BA !important;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#WhyUsImg
+{
+    display: none;
+}
+
+#WhyUs
+{
+    display: none;
 }
