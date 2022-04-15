@@ -279,6 +279,7 @@ div.footer .copyright {
 div.footer .links {
   height: 100px;
   padding: 15px;
+  padding-left: 25px;
   align-content: space-between;
 }
 
@@ -291,7 +292,7 @@ div.footer .link {
 
 div.footer .address {
   position: absolute;
-  right: 20px;
+  right: 25px;
   top: 20px;
   font-size: 16px;
 }
