@@ -9,21 +9,42 @@
   </head>
   <body>
     <div class="header">
-      <div class="logo">
-        <a href="index.html">
-          <img src="../asset/img/logo-alt.svg" alt="ShoppyMart's Logo" />
-        </a>
-      </div>
+      <img src="asset/img/logo/logo.svg" alt="logo" class="logo" />
+    
       <div class="nav">
         <div class="links">
-          <div class="link">Question ?</div>
-          <div class="link">Need Help?</div>
+          <a href="categories.html" class="link">Category</a>
+          <a href="aboutUs.html" class="link">About Us</a>
+          <a href="faq.html" class="link">FAQ</a>
+          <a href="shoppingcart.html" class="link">Cart</a>
         </div>
       </div>
+    
+      <div class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="categories.html" class="side-option">Category</a>
+        <a href="aboutUs.html" class="side-option">About Us</a>
+        <a href="faq.html" class="side-option">FAQ</a>
+        <a href="shoppingcart.html" class="side-option">Cart</a>
+      </div>
+    
+      <button class="openbtn" onclick="openNav()">☰</button>
+    
+      <div class="profile"></div>
     </div>
+    
+    <script>
+      function openNav() {
+        document.querySelector("body > div > div.sidepanel").style.width = "250px";
+      }
+    
+      function closeNav() {
+        document.querySelector("body > div > div.sidepanel").style.width = "0";
+      }
+    </script>
 
     <div class="main">
-        <div class="signupform" onsubmit="signup()">
+        <div class="signUpForm" action=".\index.html" onsubmit="signup();window.location.href = 'index.html';">
             <form>
                 <div class="formTitle">SIGN UP</div>
                 <label for="username">Username</label> 
@@ -40,13 +61,13 @@
                 <br>
                 <div class="policy">By signing this up, you agree to ShoppyMart's <br> <a href="policy/tnc.html">Term and Condition</a> & <a href="policy/privacy_policy.html">Privacy Policy</a></div>
                 <br>
-                <input id="signup" type="submit" value="Sign Up"></input>
+                <input id="signup" type="submit" value="Sign Up" ></input>
             </form>
         </div>
         <div class="background">
-            <img src="../asset/img/logo-large.svg" alt="ShoppyMart's Logo" class="background-img">
+            <img src="../asset/img/logo/logo-large.svg" alt="ShoppyMart's Logo" class="backgroundImg">
             <br>
-            <span id="bg-title">
+            <span id="backgroundTitle">
                 ShoppyMart
             </span>
             <br>

@@ -4,10 +4,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style/about_us_style.css" />
+    <link rel="stylesheet" href="../css/overall.css" />
     <script src="../js/aboutUs.js"></script>
     <title>About Us</title>
   </head>
   <body>
+    <div class="header">
+      <img src="../asset/img/logo/logo.svg" alt="logo" class="logo" />
+
+      <div class="nav">
+        <div class="links">
+          <a href="categories.html" class="link">Category</a>
+          <a href="aboutUs.html" class="link">About Us</a>
+          <a href="faq.html" class="link">FAQ</a>
+          <a href="shoppingcart.html" class="link">Cart</a>
+        </div>
+      </div>
+
+      <div class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="categories.html" class="side-option">Category</a>
+        <a href="aboutUs.html" class="side-option">About Us</a>
+        <a href="faq.html" class="side-option">FAQ</a>
+        <a href="shoppingcart.html" class="side-option">Cart</a>
+      </div>
+
+      <button class="openbtn" onclick="openNav()">☰</button>
+
+      <div class="profile" onclick="window.location.href = 'profile.html'"></div>
+    </div>
+
+    <script>
+      function openNav() {
+        document.querySelector("body > div > div.sidepanel").style.width =
+          "250px";
+      }
+
+      function closeNav() {
+        document.querySelector("body > div > div.sidepanel").style.width = "0";
+      }
+    </script>
+
+    <script>
+      function openNav() {
+        document.querySelector("body > div > div.sidepanel").style.width =
+          "250px";
+      }
+
+      function closeNav() {
+        document.querySelector("body > div > div.sidepanel").style.width = "0";
+      }
+    </script>
     <!-- Video -->
     <div class="video">
       <video autoplay loop muted>
@@ -16,8 +63,11 @@
     </div>
     <!-- Logo & Tagline -->
     <div class="logo">
-      <div class="logo-img">
-        <img src="../asset/img/logo-alt-large.svg" alt="ShoppyMart's Logo" />
+      <div class="logoImg">
+        <img
+          src="../asset/img/logo/logo-alt-large.svg"
+          alt="ShoppyMart's Logo"
+        />
       </div>
       <div class="information">
         <div class="tagline">ShoppyMart is the best online market</div>
@@ -32,37 +82,27 @@
     </div>
 
     <!-- Vision & Mission -->
-    <div class="visionnmission">
+    <div class="visionAndMission">
       <div class="vision">
-        <div class="vision-title">Our Vision</div>
-        <div class="vision-description">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
+        <div class="visionTitle">Our Vision</div>
+        <div class="visionDescription">
+          <p>Be the best online supermarket in Asia</p>
         </div>
       </div>
       <div class="mission">
-        <div class="mission-title">Our Mission</div>
-        <div class="mission-description">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. .
-          </p>
+        <div class="missionTitle">Our Mission</div>
+        <div class="missionDescription">
+          <p>Let everyone can buy their favorite products easily</p>
         </div>
       </div>
     </div>
 
     <!-- Get in touch -->
-    <div class="getintouch-title">Get in touch</div>
-    <div class="getintouch">
-      <div class="talktous">
-        <div class="talktous-title">Talk to us</div>
-        <div class="talktous-description">
+    <div class="getInTouchTitle">Get in touch</div>
+    <div class="getInTouch">
+      <div class="talkToUs">
+        <div class="talkToUsTitle">Talk to us</div>
+        <div class="talkToUsDescription">
           <p>
             Interested to talk to us ? <br />Send us an email or call our
             hotline number
@@ -72,19 +112,21 @@
           📞<a class="phone-num" href="tel:6031234567">+60 3-123 4567</a>
           <br />
           <br />
-          📧<a class="email" href="mailto:contact@shoppymart.com">contact@shoppymart.com</a>
+          📧<a class="email" href="mailto:contact@shoppymart.com"
+            >contact@shoppymart.com</a
+          >
         </div>
       </div>
       <div class="sendEnquiry">
-        <div class="sendEnquiry-title">Send us an enquiry</div>
-        <div class="sendEnquiry-description">
+        <div class="sendEnquiryTitle">Send us an enquiry</div>
+        <div class="sendEnquiryDescription">
           <p>
             Send us your enquiry directly. <br />Our customer support team will
             revert to you .
           </p>
         </div>
-        <div class="enquiry-form">
-          <form>
+        <div class="enquiryForm">
+          <form onsubmit="submitEnquiry()">
             <label for="email">Your Email</label>
             <br />
             <input type="email" name="email" id="email" />
@@ -100,56 +142,90 @@
             />
             <br />
             <br />
-            <input type="submit" value="SUBMIT" onclick="submitEnquiry()" />
+            <input type="submit" value="SUBMIT" />
           </form>
         </div>
       </div>
     </div>
 
     <!-- Customer Review -->
-    <div class="review-title">Customer Review</div>
-    <div class="review-list">
-      <div class="review-card">
-        <div class="review-img">
+    <div class="reviewTitle">Customer Review</div>
+    <div class="reviewList">
+      <div class="reviewCard">
+        <div class="reviewImg">
           <img
             src="../asset/img/cust_img/Customer 1.png"
             alt="Customer Image"
           />
         </div>
-        <div class="review-description">
+        <div class="reviewDescription">
           <p>“ The products is so cheap and good definitely will buy again.</p>
         </div>
-        <div class="reviewer">Ms. Michelle</div>
-        <div class="review-date">12-02-2022</div>
-        <div class="review-rating">⭐⭐⭐⭐⭐</div>
+        <div class="reviewer">Mr. Micheal</div>
+        <div class="reviewDate">12-02-2022</div>
+        <div class="reviewRating">⭐⭐⭐⭐⭐</div>
       </div>
-      <div class="review-card">
-        <div class="review-img">
+      <div class="reviewCard">
+        <div class="reviewImg">
           <img
             src="../asset/img/cust_img/Customer 2.png"
             alt="Customer Image"
           />
         </div>
-        <div class="review-description">
-          <p>“ The products is so cheap and good definitely will buy again.</p>
+        <div class="reviewDescription">
+          <p>“ Fresh products and great price worth.</p>
         </div>
         <div class="reviewer">Ms. Michelle</div>
-        <div class="review-date">12-02-2022</div>
-        <div class="review-rating">⭐⭐⭐⭐⭐</div>
+        <div class="reviewDate">14-02-2022</div>
+        <div class="reviewRating">⭐⭐⭐⭐⭐</div>
       </div>
-      <div class="review-card">
-        <div class="review-img">
+      <div class="reviewCard">
+        <div class="reviewImg">
           <img
             src="../asset/img/cust_img/Customer 3.png"
             alt="Customer Image"
           />
         </div>
-        <div class="review-description">
-          <p>“ The products is so cheap and good definitely will buy again.</p>
+        <div class="reviewDescription">
+          <p>“ Fast delivery!.</p>
         </div>
-        <div class="reviewer">Ms. Michelle</div>
-        <div class="review-date">12-02-2022</div>
-        <div class="review-rating">⭐⭐⭐⭐⭐</div>
+        <div class="reviewer">Mrs. Lim</div>
+        <div class="reviewDate">13-03-2022</div>
+        <div class="reviewRating">⭐⭐⭐⭐⭐</div>
+      </div>
+      <div class="reviewCard">
+        <div class="reviewImg">
+          <img
+            src="../asset/img/cust_img/Customer 4.png"
+            alt="Customer Image"
+          />
+        </div>
+        <div class="reviewDescription">
+          <p>“ I love ShoppyMart.</p>
+        </div>
+        <div class="reviewer">Ms. Lily</div>
+        <div class="reviewDate">12-04-2022</div>
+        <div class="reviewRating">⭐⭐⭐⭐⭐</div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="copyright">&copy; 2022 ShoppyMart. All Rights Reserved.</div>
+      <div class="docs">
+        <div class="links">
+          <a href="tnc.html" class="link">Terms and Conditions</a><br />
+          <a href="privacy_policy.html" class="link">Privacy Policy</a><br />
+        </div>
+        <div class="address">
+          <strong> Address </strong>
+          <address>
+            ShoppyMart, <br />
+            Tunku Abdul Rahman University College ,<br />
+            Main Campus,<br />
+            Jalan Genting Kelang, <br />
+            53300 Kuala Lumpur, <br />
+            Wilayah Persekutuan Kuala Lumpur
+          </address>
+        </div>
       </div>
     </div>
   </body>

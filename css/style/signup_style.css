@@ -53,18 +53,18 @@ div.main .background {
   color: #fff3e6;
 }
 
-div.main .background-img {
+div.main .backgroundImg {
   height: 400px;
   width: 400px;
   margin-left: 2.5%;
 }
 
-div.main #bg-title {
+div.main #backgroundTitle {
   font-weight: 700;
   font-size: 80px;
 }
 
-div.main .signupform {
+div.main .signUpForm {
   position: absolute;
   top: 10%;
   right: 10%;
@@ -145,7 +145,7 @@ div.main #signup {
     display: none;
   }
 
-  div.main .signupform {
+  div.main .signUpForm {
     margin: auto;
     top: 12.5%;
     left: 15%;
