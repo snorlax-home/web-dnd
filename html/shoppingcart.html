@@ -7,24 +7,36 @@
 <link rel="stylesheet" href="../../css/overall.css"/>
 <link rel="stylesheet" href="../../css/layout/shoppingcart_layout.css"/>
 <link rel="stylesheet" href="../../css/style/shoppingcart_style.css"/>
-<script src="../js/shoppingcart.js"></script>        
+<script src="../js/shoppingcart.js"></script>
+<script src="../js/header.js"></script>        
 </head>
 
 <body>
 <div class="header">
-    <img src="../../asset/img/logo/logo.svg" alt="logo" class="logo" />
+    <img src="../asset/img/logo/logo.svg" alt="logo" class="logo" />
+    
     <div class="nav">
         <div class="links">
-        <div class="link"><a href="categories.html">Category</a></div>
-        <div class="link">About Us</div>
-        <div class="link">FAQ</div>
-        <div class="link"><a href="shoppingcart.html">Cart</a></div>
+        <a href="categories.html" class="link">Category</a>
+        <a href="aboutUs.html" class="link">About Us</a>
+        <a href="faq.html" class="link">FAQ</a>
+        <a href="shoppingcart.html" class="link">Cart</a>
+        </div>
     </div>
-</div>
     
-<div class="profile"></div>
-</div>
+    <div class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="categories.html" class="side-option">Category</a>
+        <a href="aboutUs.html" class="side-option">About Us</a>
+        <a href="faq.html" class="side-option">FAQ</a>
+        <a href="shoppingcart.html" class="side-option">Cart</a>
+    </div>
     
+    <button class="openbtn" onclick="openNav()">☰</button>
+    
+    <div class="profile" onclick="window.location.href = 'profile.html'"></div>
+</div>
+      
 <h1>Your Shopping Cart</h1>
 
 <div class="container">
@@ -130,15 +142,13 @@
             </div>
         </div>       
 </div>
-
-
 </body>
-<!-- <div class="footer">
+<div class="footer">
     <div class="copyright">&copy; 2022 ShoppyMart. All Rights Reserved.</div>
     <div class="docs">
       <div class="links">
-        <a href="tnc.html" class="link">Terms and Conditions</a><br />
-        <a href="privacy_policy.html" class="link">Privacy Policy</a><br />
+        <a href="policy/tnc.html" class="link">Terms and Conditions</a><br />
+        <a href="policy/privacyPolicy.html" class="link">Privacy Policy</a><br />
       </div>
       <div class="address">
         <strong> Address </strong>
@@ -151,6 +161,7 @@
           Wilayah Persekutuan Kuala Lumpur
         </address>
       </div>
-  </div> -->
+    </div>
+  </div>
 
 </html>
