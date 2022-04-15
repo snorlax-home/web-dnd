@@ -9,3 +9,47 @@
     height: 500px;
 }
 
+.banner 
+{
+    position: relative;
+    width: 100%;
+}
+
+
+
+.Slides
+{
+    height: 500px;
+    width: 100%;
+}
+
+#slide2
+{
+    display: none;
+}
+
+#slide3
+{
+    display: none;
+}
+
+#button1
+{
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 450px;
+}
+
+#button2
+{
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 450px;
+}
+
+#button3
+{
+    position: absolute;
+    margin-left: 60%;
+    margin-top: 450px;
+}
