@@ -65,7 +65,7 @@ div.main .submitButton {
   font-size: 20px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 414px) {
   div.main .submitButton {
     margin-left: 40%;
     width: 30%;

@@ -11,33 +11,37 @@
     <title>Profile</title>
   </head>
   <body>
-    <div class="header">
-      <img src="../asset/img/logo/logo.svg" alt="logo" class="logo" />
+    <header>
+      <div class="header">
+        <img src="../asset/img/logo/logo.svg" alt="logo" class="logo" />
 
-      <div class="nav">
-        <div class="links">
-          <a href="categories.html" class="link">Category</a>
-          <a href="aboutUs.html" class="link">About Us</a>
-          <a href="faq.html" class="link">FAQ</a>
-          <a href="shoppingcart.html" class="link">Cart</a>
+        <div class="nav">
+          <div class="links">
+            <a href="categories.html" class="link">Category</a>
+            <a href="aboutUs.html" class="link">About Us</a>
+            <a href="faq.html" class="link">FAQ</a>
+            <a href="shoppingcart.html" class="link">Cart</a>
+          </div>
         </div>
+
+        <div class="sidepanel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >×</a
+          >
+          <a href="categories.html" class="side-option">Category</a>
+          <a href="aboutUs.html" class="side-option">About Us</a>
+          <a href="faq.html" class="side-option">FAQ</a>
+          <a href="shoppingcart.html" class="side-option">Cart</a>
+        </div>
+
+        <button class="openbtn" onclick="openNav()">☰</button>
+
+        <div
+          class="profile"
+          onclick="window.location.href = 'profile.html'"
+        ></div>
       </div>
-
-      <div class="sidepanel">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a href="categories.html" class="side-option">Category</a>
-        <a href="aboutUs.html" class="side-option">About Us</a>
-        <a href="faq.html" class="side-option">FAQ</a>
-        <a href="shoppingcart.html" class="side-option">Cart</a>
-      </div>
-
-      <button class="openbtn" onclick="openNav()">☰</button>
-
-      <div
-        class="profile"
-        onclick="window.location.href = 'profile.html'"
-      ></div>
-    </div>
+    </header>
 
     <div class="main">
       <!-- Edit Profile -->

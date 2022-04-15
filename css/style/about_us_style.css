@@ -266,9 +266,13 @@ body {
   margin: 10px 0;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 414px) {
   .video {
     display: none;
+  }
+
+  .tagline{
+    font-size: 20px;
   }
 
   .description {

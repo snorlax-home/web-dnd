@@ -138,7 +138,7 @@ div.main #signup {
   color: #fff3e6;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 414px) {
   .link {
     font-size: 14px;
   }
