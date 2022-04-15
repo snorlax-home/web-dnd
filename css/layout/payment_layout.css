@@ -59,7 +59,6 @@
     margin-left: 10%;
     width: 80%;
     height: 330px;
-    margin-bottom: 10%;
 }
 
 .img_product
@@ -97,8 +96,9 @@
 
 .button
 {
-    padding: 15px 32px;
-    margin-left: 82%;
+    padding: 1.2vw 1.2vw;
+    margin-left: 80%;
+    
 }
 
 /*pop up box*/
