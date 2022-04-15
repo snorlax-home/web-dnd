@@ -8,27 +8,38 @@
     <link rel="stylesheet" href="../../css/overall.css"/>
     <link rel="stylesheet" href="../../css/layout/policy_layout.css"/>
     <link rel="stylesheet" href="../../css/style/policy_style.css"/>
+    <script src="../../js/header.js"></script>
 </head>
 <body>
     <header>
         <div class="header">
-            <img src="../../asset/img/logo.svg" alt="logo" class="logo" />
+            <img src="../../asset/img/logo/logo.svg" alt="logo" class="logo" />
           
             <div class="nav">
               <div class="links">
-                <div class="link">Category</div>
-                <div class="link">About Us</div>
-                <div class="link">FAQ</div>
-                <div class="link">Cart</div>
+                <a href="categories.html" class="link">Category</a>
+                <a href="aboutUs.html" class="link">About Us</a>
+                <a href="faq.html" class="link">FAQ</a>
+                <a href="shoppingcart.html" class="link">Cart</a>
               </div>
             </div>
           
-            <div class="profile"></div>
+            <div class="sidepanel">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+              <a href="categories.html" class="side-option">Category</a>
+              <a href="aboutUs.html" class="side-option">About Us</a>
+              <a href="faq.html" class="side-option">FAQ</a>
+              <a href="shoppingcart.html" class="side-option">Cart</a>
+            </div>
+          
+            <button class="openbtn" onclick="openNav()">☰</button>
+          
+            <div class="profile" onclick="window.location.href = 'profile.html'"></div>
           </div>
     </header>
     <section>
         <h1>Privacy Policy</h1>
-            <p>Last updated: February 25, 2022</p>
+            <p>Last updated: 25/2/2022</p>
             <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
             <p>We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.</p>
             
@@ -170,7 +181,26 @@
     </section>
     
     <footer>
-        
+        <div class="footer">
+            <div class="copyright">&copy; 2022 ShoppyMart. All Rights Reserved.</div>
+            <div class="docs">
+              <div class="links">
+                <a href="tnc.html" class="link">Terms and Conditions</a><br />
+                <a href="privacy_policy.html" class="link">Privacy Policy</a><br />
+              </div>
+              <div class="address">
+                <strong> Address </strong>
+                <address>
+                  ShoppyMart, <br />
+                  Tunku Abdul Rahman University College ,<br />
+                  Main Campus,<br />
+                  Jalan Genting Kelang, <br />
+                  53300 Kuala Lumpur, <br />
+                  Wilayah Persekutuan Kuala Lumpur
+                </address>
+              </div>
+            </div>
+          </div>
     </footer>
 </body>
 </html>

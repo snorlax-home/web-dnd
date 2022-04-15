@@ -44,3 +44,23 @@
 {
     background-color: #FA87A1;
 }
+
+.quantity
+{
+    
+    font-weight: bold;
+}
+
+.total
+{
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.totalprice
+{
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+}

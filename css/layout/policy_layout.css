@@ -18,11 +18,6 @@ h1, h2 {
 
 /* Mobile Screen Layout */
 @media only screen and (max-width: 414px) {
-    /* TODO Rmb change this */
-    header .header{
-        display:none;
-    }
-
     section {
         padding-left: 27px;
         padding-right: 28px;
