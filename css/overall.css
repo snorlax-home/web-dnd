@@ -1,3 +1,29 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(../asset/font/static/Montserrat-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../asset/font/static/Montserrat-Bold.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../asset/font/static/Montserrat-Black.ttf);
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../asset/font/static/);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -162,11 +188,12 @@ div.footer .address {
 }
 
 @media screen and (max-width: 414px) {
-  div.footer div.link {
-    font-size: 15px;
+  div.footer .link {
+    font-size: 12px;
   }
   div.footer .address {
-    font-size: 13px;
+    font-size: 11px;
+    right: 10px;
   }
 }
 

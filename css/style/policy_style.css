@@ -6,6 +6,12 @@ h1 {
     text-align: center;
 }
 
+h1, h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    color: #fa87a1;
+}
 
 p,ul {
     text-align: justify;
