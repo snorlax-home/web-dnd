@@ -1,6 +1,9 @@
 var paymentOption = 0;
 var Boxs = document.getElementById("Box");
 var cross = document.getElementsByClassName("close")[0];
+var proc = document.getElementById("process");
+var done = document.getElementById("done");
+var loader =  document.getElementById("loader");
 
 function changeColorButton1(color)
 {
@@ -85,26 +88,43 @@ function confirm()
 
     else if(paymentOption == 3)
     {
-        Box.style.display ="block";
-        console.log("3");
+        Boxs.style.display ="block";
+        setTimeout(() => {
+            proc.style.display ="none";
+            loader.style.display ="none";
+            done.style.display ="block";
+            
+        }, 3000);
+         
     }
 
     else if(paymentOption == 4)
     {
-        Box.style.display ="block";
-        console.log("4");
-    
+        Boxs.style.display ="block";
+        setTimeout(() => {
+            proc.style.display ="none";
+            loader.style.display ="none";
+            done.style.display ="block";
+            
+        }, 3000);
+         
     }
 }
 
 cross.onclick = function()
 {
-    alert("HEllllo");
     Boxs.style.display = "none";
+    done.style.display ="none";
+    proc.style.display ="block";
+    loader.style.display ="block";
 }
 
 window.onclick = function(event) {
     if (event.target == Boxs) {
         Boxs.style.display = "none";
+        done.style.display ="none";
+        proc.style.display ="block";
+        loader.style.display ="block";
+    
     }
   }

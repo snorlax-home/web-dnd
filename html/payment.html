@@ -8,78 +8,92 @@
     <link rel="stylesheet" href="../../css/overall.css"/>
     <link rel="stylesheet" href="../css/layout/payment_layout.css">
     <link rel="stylesheet" href="../css/style/payment_style.css">
-    <script src="../js/payment.js"></script>    
+    <script src="../js/header.js"></script>
 
 </head>
 <body>
-    <header>
-        <div class="header">
-            <img src="../../asset/img/logo/logo.svg" alt="logo" class="logo" />
-            <div class="nav">
-                <div class="links">
-                <div class="link"><a href="categories.html">Category</a></div>
-                <div class="link">About Us</div>
-                <div class="link">FAQ</div>
-                <div class="link"><a href="shoppingcart.html">Cart</a></div>
-            </div>
+    <div class="header">
+        <img src="../asset/img/logo/logo.svg" alt="logo" class="logo" />
+      
+        <div class="nav">
+          <div class="links">
+            <a href="categories.html" class="link">Category</a>
+            <a href="aboutUs.html" class="link">About Us</a>
+            <a href="faq.html" class="link">FAQ</a>
+            <a href="shoppingcart.html" class="link">Cart</a>
+          </div>
         </div>
-
-    </header> 
+      
+        <div class="sidepanel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <a href="categories.html" class="side-option">Category</a>
+          <a href="aboutUs.html" class="side-option">About Us</a>
+          <a href="faq.html" class="side-option">FAQ</a>
+          <a href="shoppingcart.html" class="side-option">Cart</a>
+        </div>
+      
+        <button class="openbtn" onclick="openNav()">☰</button>
+      
+        <div class="profile" onclick="window.location.href = 'profile.html'"></div>
+      </div>
 
     <div id ="Box" class = "popUpBox">
 
         <div class = "BoxContent">
             <span class="close">&times;</span>
-            <p>Payment is processing...</p>
+            
+            <div id = "loader" ></div>
+            <p id = "process" >processing...</p>
+            <p id = "done" >Payment is done</p>
         </div>
 
     </div>
     
-    <p class = mid>Payment Method</p>
-    <button class = bar_pink > Online Banking  </button>
-    <button id = button1 class="paymentbutton" onclick="ChoosePayment1()"> Maybank</button>
-    <button id = button2 class="paymentbutton" onclick="ChoosePayment2()"> HongLeong Bank </button>
+    <p class = "mid">Payment Method</p>
+    <button class = "bar_pink" > Online Banking  </button>
+    <button id = "button1" class="paymentbutton" onclick="ChoosePayment1()"> Maybank</button>
+    <button id = "button2" class="paymentbutton" onclick="ChoosePayment2()"> HongLeong Bank </button>
 
 
     <button class = Secondbar_pink>Credit/ Debit Card</button>
-    <button id = button3 class="paymentbutton" onclick="ChoosePayment3()">*4428</button>
-    <button id = button4 class="paymentbutton" onclick="ChoosePayment4()">*4438</button>
+    <button id = "button3" class="paymentbutton" onclick="ChoosePayment3()">*4428</button>
+    <button id = "button4" class="paymentbutton" onclick="ChoosePayment4()">*4438</button>
 
-    <div class = topbar></div>
+    <div class = "topbar"></div>
 
-    <div class = midbar> 
-        <div class = container>
-            <img class = img_product src="../asset/img/product_img/broccoli.jpg" alt="broccoli"> 
+    <div class = "midbar"> 
+        <div class = "container">
+            <img class = "img_product" src="../asset/img/product_img/broccoli.jpg" alt="broccoli"> 
                 <p>broccoli<br><br>RM100</p>
-                <p class = quantity>x1</p>
+                <p class = "quantity">x1</p>
         </div>
         
         
         
     </div>
-    <div class = midbar> 
-        <div class = container>
+    <div class = "midbar"> 
+        <div class = "container">
             <img class = img_product src="../asset/img/product_img/cabbage.jpg" alt="cabbage"> 
-        <p class = price>cabbage<br><br>RM50</p>
-        <p class = quantity>x1</p>
+        <p>cabbage<br><br>RM50</p>
+        <p class = "quantity">x1</p>
         
         </div>
         
     </div>
-    <div class = midbar> 
-        <div class = container>
-            <img class = img_product src="../asset/img/product_img/maggi.jpg" alt="maggi"> 
-            <p class = price>maggi<br><br>RM30</p>
-            <p class = quantity>x1</p>
+    <div class = "midbar"> 
+        <div class = "container">
+            <img class = "img_product" src="../asset/img/product_img/maggi.jpg" alt="maggi"> 
+            <p>maggi<br><br>RM30</p>
+            <p class = "quantity">x1</p>
         </div>
         
 
     </div>
 
-    <div class = totalbar>
-        <div class = container>
-            <p class = total>Total(product)<br><br>Total</p>
-            <p class = totalprice>RM180.00<br>(Delivery fee) + RM6.00<br>RM186.00</p>
+    <div class = "totalbar">
+        <div class = "container">
+            <p class = "total">Total(product)<br><br>Total</p>
+            <p class = "totalprice">RM180.00<br>(Delivery fee) + RM6.00<br>RM186.00</p>
         </div>
 
         <div>
@@ -87,7 +101,27 @@
         </div>
     </div>
     
-
-
+    
+    <script src="../js/payment.js"></script>  
+    <div class="footer">
+        <div class="copyright">&copy; 2022 ShoppyMart. All Rights Reserved.</div>
+        <div class="docs">
+          <div class="links">
+            <a href="policy/tnc.html" class="link">Terms and Conditions</a><br />
+            <a href="policy/privacyPolicy.html" class="link">Privacy Policy</a><br />
+          </div>
+          <div class="address">
+            <strong> Address </strong>
+            <address>
+              ShoppyMart, <br />
+              Tunku Abdul Rahman University College ,<br />
+              Main Campus,<br />
+              Jalan Genting Kelang, <br />
+              53300 Kuala Lumpur, <br />
+              Wilayah Persekutuan Kuala Lumpur
+            </address>
+          </div>
+        </div>
+      </div>  
 </body>
 </html>
