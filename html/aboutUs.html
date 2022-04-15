@@ -31,19 +31,11 @@
 
       <button class="openbtn" onclick="openNav()">☰</button>
 
-      <div class="profile" onclick="window.location.href = 'profile.html'"></div>
+      <div
+        class="profile"
+        onclick="window.location.href = 'profile.html'"
+      ></div>
     </div>
-
-    <script>
-      function openNav() {
-        document.querySelector("body > div > div.sidepanel").style.width =
-          "250px";
-      }
-
-      function closeNav() {
-        document.querySelector("body > div > div.sidepanel").style.width = "0";
-      }
-    </script>
 
     <script>
       function openNav() {
@@ -98,7 +90,7 @@
     </div>
 
     <!-- Get in touch -->
-    <div class="getInTouchTitle">Get in touch</div>
+    <div id="getInTouchTitle">Get in touch</div>
     <div class="getInTouch">
       <div class="talkToUs">
         <div class="talkToUsTitle">Talk to us</div>
