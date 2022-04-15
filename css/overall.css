@@ -143,10 +143,10 @@ body {
   font-family: 'Montserrat';
 }
 /* Header Styles */
-div.header .logo {
+div.header a .logo {
   height: 40px;
   width: 161px;
-  margin-left: 3%;
+  margin-left: 7%;
 }
 
 .header {
