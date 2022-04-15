@@ -11,7 +11,7 @@ function signup() {
     // Check if the password is valid
     if (!validatePassword(password)) {
       alert(
-        "Password is not valid, your password must contain at least 1 number, symbol, upper case and lower case alphabet with at least 6 charaters"
+        "Password is not valid, your password must contain at least 1 number, symbol, upper case and lower case alphabet with at least 6 characters"
       );
     } else {
       saveCookie(username, password);
@@ -45,7 +45,7 @@ function saveCookie(username, password) {
 }
 
 function login() {
-  window.location.href = "index.html";
+  window.location.href = "../index.html";
 }
 
 function validatePassword(password) {
@@ -55,7 +55,7 @@ function validatePassword(password) {
 
 function checkLogin() {
   if (getCookie("isLoggedIn") == "true") {
-    window.location.href = "index.html";
+    window.location.href = "../index.html";
   }
 }
 

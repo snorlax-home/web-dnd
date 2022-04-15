@@ -5,37 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../../css/overall.css"/>
-    <link rel="stylesheet" href="../css/layout/index_layout.css">
-    <link rel="stylesheet" href="../css/style/index_style.css">
-    <script src="../js/header.js"></script>
+    <link rel="stylesheet" href="css/overall.css"/>
+    <link rel="stylesheet" href="css/layout/index_layout.css">
+    <link rel="stylesheet" href="css/style/index_style.css">
+    <script src="js/header.js"></script>
 
 </head>
 <body>
-  <div class="header">
-    <a href="../index.html"><img src="../asset/img/logo/logo.svg" alt="logo" class="logo" /></a>
-  
-    <div class="nav">
-      <div class="links">
-        <a href="categories.html" class="link">Category</a>
-        <a href="aboutUs.html" class="link">About Us</a>
-        <a href="faq.html" class="link">FAQ</a>
-        <a href="shoppingcart.html" class="link">Cart</a>
+  <header>
+    <div class="header">
+      <a href="index.html"><img src="asset/img/logo/logo.svg" alt="logo" class="logo" /></a>
+    
+      <div class="nav">
+        <div class="links">
+          <a href="html/categories.html" class="link">Categories</a>
+          <a href="html/aboutUs.html" class="link">About Us</a>
+          <a href="html/faq.html" class="link">FAQ</a>
+          <a href="html/shoppingcart.html" class="link">Cart</a>
+        </div>
       </div>
+    
+      <div class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="html/categories.html" class="side-option">Category</a>
+        <a href="html/aboutUs.html" class="side-option">About Us</a>
+        <a href="html/faq.html" class="side-option">FAQ</a>
+        <a href="html/shoppingcart.html" class="side-option">Cart</a>
+      </div>
+    
+      <button class="openbtn" onclick="openNav()">☰</button>
+    
+      <div class="profile" onclick="window.location.href = 'html/profile.html'"></div>
     </div>
-  
-    <div class="sidepanel">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-      <a href="categories.html" class="side-option">Category</a>
-      <a href="aboutUs.html" class="side-option">About Us</a>
-      <a href="faq.html" class="side-option">FAQ</a>
-      <a href="shoppingcart.html" class="side-option">Cart</a>
-    </div>
-  
-    <button class="openbtn" onclick="openNav()">☰</button>
-  
-    <div class="profile" onclick="window.location.href = 'profile.html'"></div>
-  </div>
+  </header>
+
     
     <div class = banner>
       <button id = "button1">First</button>
