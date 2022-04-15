@@ -12,8 +12,8 @@ footer
     margin-left: 31%;
     border-radius: 0px 0px 50px 50px;
     padding: 20px;
-    width: 38%;
-    height: 320px;
+    width: 37%;
+    height: 500px;
 }
 
 .box img
@@ -21,9 +21,14 @@ footer
     height: 300px;
     width: 200px;
     float: left;
-    margin-right: 50px;
     margin-top: 10px;
     margin-left: 10px;
+}
+
+.box p{
+    width: 50%;
+    float: right;
+    text-align: justify;
 }
 
 .banner 
@@ -79,7 +84,7 @@ footer
     width: 30px;
 }
 
-.tilte1
+.title1
 {
     margin-top: 30px;
     width: 20%;
@@ -91,7 +96,7 @@ footer
     border-radius: 50px 0px 0px 0px
 }
 
-.tilte2
+.title2
 {
     margin-top: 30px;
     width: 20%;
@@ -103,19 +108,10 @@ footer
     border-radius: 0px 50px 0px 0px
 }
 
-.tilte1:hover,.tilte2:hover
+.title1:hover,.title2:hover
 {
     background-color: #FDA4BA !important;
     text-decoration: none;
     cursor: pointer;
 }
 
-#WhyUsImg
-{
-    display: none;
-}
-
-#WhyUs
-{
-    display: none;
-}

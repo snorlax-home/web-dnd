@@ -7,7 +7,6 @@
 {
     
     border-radius: 50%;
-
 }
 
 .box img
@@ -29,7 +28,7 @@
     cursor: pointer;
 }
 
-.tilte1
+.title1
 {
     font-size: x-large;
     border: 0px;
@@ -37,7 +36,7 @@
     border-radius: 50px 0px 0px 0px
 }
 
-.tilte2
+.title2
 {
     font-size: x-large;
     border: 0px;
