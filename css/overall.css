@@ -12,7 +12,6 @@ div.header .logo {
   height: 40px;
   width: 161px;
   margin-left: 3%;
-  padding-left: 2%;
 }
 
 .header {
@@ -25,7 +24,6 @@ div.header .logo {
 
 div.header .nav {
   margin-left: auto;
-  margin-right: 65px;
 }
 
 div.header .link {
@@ -153,15 +151,18 @@ div.footer .link {
   color: white;
   font-weight: bold;
   padding-top: 10px;
+  font-size:16px;
 }
+
 div.footer .address {
   position: absolute;
   right: 20px;
   top: 20px;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 414px) {
-  div.footer div.links a {
+  div.footer div.link {
     font-size: 15px;
   }
   div.footer .address {
