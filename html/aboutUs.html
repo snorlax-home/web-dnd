@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style/about_us_style.css" />
     <link rel="stylesheet" href="../css/overall.css" />
+    <script src="../js/header.js"></script>
     <script src="../js/aboutUs.js"></script>
     <title>About Us</title>
   </head>
   <body>
     <div class="header">
       <img src="../asset/img/logo/logo.svg" alt="logo" class="logo" />
-
+    
       <div class="nav">
         <div class="links">
           <a href="categories.html" class="link">Category</a>
@@ -20,7 +21,7 @@
           <a href="shoppingcart.html" class="link">Cart</a>
         </div>
       </div>
-
+    
       <div class="sidepanel">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <a href="categories.html" class="side-option">Category</a>
@@ -28,33 +29,11 @@
         <a href="faq.html" class="side-option">FAQ</a>
         <a href="shoppingcart.html" class="side-option">Cart</a>
       </div>
-
+    
       <button class="openbtn" onclick="openNav()">☰</button>
-
+    
       <div class="profile" onclick="window.location.href = 'profile.html'"></div>
     </div>
-
-    <script>
-      function openNav() {
-        document.querySelector("body > div > div.sidepanel").style.width =
-          "250px";
-      }
-
-      function closeNav() {
-        document.querySelector("body > div > div.sidepanel").style.width = "0";
-      }
-    </script>
-
-    <script>
-      function openNav() {
-        document.querySelector("body > div > div.sidepanel").style.width =
-          "250px";
-      }
-
-      function closeNav() {
-        document.querySelector("body > div > div.sidepanel").style.width = "0";
-      }
-    </script>
     <!-- Video -->
     <div class="video">
       <video autoplay loop muted>
@@ -98,7 +77,7 @@
     </div>
 
     <!-- Get in touch -->
-    <div class="getInTouchTitle">Get in touch</div>
+    <div id="getInTouchTitle">Get in touch</div>
     <div class="getInTouch">
       <div class="talkToUs">
         <div class="talkToUsTitle">Talk to us</div>
@@ -212,8 +191,8 @@
       <div class="copyright">&copy; 2022 ShoppyMart. All Rights Reserved.</div>
       <div class="docs">
         <div class="links">
-          <a href="tnc.html" class="link">Terms and Conditions</a><br />
-          <a href="privacy_policy.html" class="link">Privacy Policy</a><br />
+          <a href="policy/tnc.html" class="link">Terms and Conditions</a><br />
+          <a href="policy/privacyPolicy.html" class="link">Privacy Policy</a><br />
         </div>
         <div class="address">
           <strong> Address </strong>

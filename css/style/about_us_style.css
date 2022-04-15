@@ -103,7 +103,7 @@ body {
 }
 
 /* Get in touch */
-.getintouchTitle {
+#getintouchTitle {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 900;
@@ -280,7 +280,7 @@ body {
     flex-direction: column;
   }
 
-  .getintouchTitle {
+  #getintouchTitle {
     margin-top: 50px;
   }
 

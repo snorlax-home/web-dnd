@@ -25,6 +25,8 @@ div.header .nav {
 
 div.header .link {
   padding: 0 15px;
+  color: #fa87a1;
+  text-decoration: none;
   cursor: pointer;
 }
 
