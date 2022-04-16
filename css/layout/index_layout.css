@@ -1,117 +1,100 @@
-footer
-{
-    position: absolute; 
-    top: 1100px; 
-    width: 100%;
+footer {
+  position: absolute;
+  top: 1100px;
+  width: 100%;
 }
 
-.box
-{
-    position: absolute;
-    margin-top: 80px;
-    margin-left: 31%;
-    border-radius: 0px 0px 50px 50px;
-    padding: 20px;
-    width: 38%;
-    height: 325px;
+.box {
+  position: absolute;
+  margin-top: 80px;
+  margin-left: 31%;
+  border-radius: 0px 0px 50px 50px;
+  padding: 20px;
+  width: 37%;
+  height: 325px;
 }
 
-.box img
-{
-    height: 300px;
-    width: 300px;
-    float: left;
-    margin-top: 10px;
-    margin-left: 10px;
+.box img {
+  height: 300px;
+  width: 200px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
-.box p{
-    width: 50%;
-    float: right;
-    text-align: justify;
+.box p {
+  width: 50%;
+  float: right;
+  text-align: justify;
 }
 
-.banner 
-{
-    position: relative;
-    width: 100%;
+.banner {
+  position: relative;
+  width: 100%;
 }
 
-
-
-.Slides
-{
-    height: 500px;
-    width: 100%;
+.Slides {
+  height: 500px;
+  width: 100%;
 }
 
-#slide2
-{
-    display: none;
+#slide2 {
+  display: none;
 }
 
-#slide3
-{
-    display: none;
+#slide3 {
+  display: none;
 }
 
-#button1
-{
-    position: absolute;
-    margin-left: 40%;
-    margin-top: 450px;
+#button1 {
+  position: absolute;
+  margin-left: 40%;
+  margin-top: 450px;
 }
 
-#button2
-{
-    position: absolute;
-    margin-left: 50%;
-    margin-top: 450px;
+#button2 {
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 450px;
 }
 
-#button3
-{
-    position: absolute;
-    margin-left: 60%;
-    
+#button3 {
+  position: absolute;
+  margin-left: 60%;
 }
 
-.banner button
-{
-    margin-top: 450px;
-    border-radius: 50%;
-    height: 30px;
-    width: 30px;
+.banner button {
+  margin-top: 450px;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
 }
 
-.title1
-{
-    margin-top: 30px;
-    width: 20%;
-    height: 50px;
-    position: absolute;
-    margin-left: 31%;
-    border: 0px;
-    background: rgb(255, 243, 230);
-    border-radius: 50px 0px 0px 0px
+.title1 {
+  margin-top: 30px;
+  width: 20%;
+  height: 50px;
+  position: absolute;
+  margin-left: 31%;
+  border: 0px;
+  background: rgb(255, 243, 230);
+  border-radius: 50px 0px 0px 0px;
 }
 
-.title2
-{
-    margin-top: 30px;
-    width: 20%;
-    height: 50px;
-    position: absolute;
-    margin-left: 51%;
-    border: 0px;
-    background-color: #FA87A1;
-    border-radius: 0px 50px 0px 0px
+.title2 {
+  margin-top: 30px;
+  width: 20%;
+  height: 50px;
+  position: absolute;
+  margin-left: 51%;
+  border: 0px;
+  background-color: #fa87a1;
+  border-radius: 0px 50px 0px 0px;
 }
 
-.title1:hover,.title2:hover
-{
-    background-color: #FDA4BA !important;
-    text-decoration: none;
-    cursor: pointer;
+.title1:hover,
+.title2:hover {
+  background-color: #fda4ba !important;
+  text-decoration: none;
+  cursor: pointer;
 }
-

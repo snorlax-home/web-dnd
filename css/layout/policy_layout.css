@@ -1,21 +1,16 @@
 section {
-    padding-left: 3.33%;
-    padding-right: 7%;
-
+  padding-left: 3.33%;
+  padding-right: 7%;
 }
 
 a {
-    color: black;
+  color: black;
 }
-
-
-
 
 /* Mobile Screen Layout */
 @media only screen and (max-width: 414px) {
-    section {
-        padding-left: 27px;
-        padding-right: 28px;
-    }
+  section {
+    padding-left: 27px;
+    padding-right: 28px;
+  }
 }
-    

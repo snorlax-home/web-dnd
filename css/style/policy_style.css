@@ -1,18 +1,20 @@
 body {
-    font-family: "Montserrat";
+  font-family: "Montserrat";
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
-h1, h2 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 900;
-    color: #fa87a1;
+h1,
+h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  color: #fa87a1;
 }
 
-p,ul {
-    text-align: justify;
+p,
+ul {
+  text-align: justify;
 }

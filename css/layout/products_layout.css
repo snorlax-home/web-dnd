@@ -109,6 +109,12 @@ section.section_4 li {
   margin-right: 25px;
 }
 
+section.section_2,
+section.section_3,
+section.section_4 {
+  border-radius: 16px;
+}
+
 @media only screen and (max-width: 414px) {
   section.section_1 > p {
     margin: 8px 20px 12px 20px;

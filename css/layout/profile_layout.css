@@ -1,0 +1,52 @@
+div.main {
+  height: max-content;
+  width: 100%;
+}
+
+div.main .editProfileForm,
+.changePasswordForm {
+  padding: 30px;
+}
+
+div.main label {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  padding-bottom: 20px;
+}
+
+div.main #username,
+#email,
+#contactNumber,
+#dob,
+#currentPassword,
+#newPassword,
+#confirmPassword {
+  width: 40%;
+  padding: 10px;
+  margin-bottom: 20px;
+  height: calc(100% / 12);
+}
+
+div.main .submitButton {
+  border-radius: 10px;
+  margin: 10px;
+  width: 150px;
+  height: 40px;
+}
+
+@media screen and (max-width: 414px) {
+  div.main .submitButton {
+    margin-left: 40%;
+    width: 30%;
+  }
+
+  #gender > label:nth-child(2) {
+    width: 100px;
+  }
+
+  #gender {
+    width: 400px;
+    font-size: 12px;
+  }
+}
