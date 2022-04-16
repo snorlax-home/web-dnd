@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 65px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.header .logo {
+  padding-left: 30px;
+}
+
+div.header .nav {
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+div.header .links {
+  display: flex;
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+div.main {
+  height: calc(100% - 65px);
+}
+
+div.main .background {
+  padding-top: 2.5%;
+  padding-left: 5%;
+}
+
+div.main .backgroundImg {
+  height: 400px;
+  width: 400px;
+  margin-left: 2.5%;
+}
+
+div.main .signUpForm {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  height: 80%;
+  width: 30%;
+  padding: 15px;
+}
+
+div.main .formTitle {
+  padding: 15px 0 50px;
+}
+
+div.main #username,
+#password,
+#confirmPassword {
+  width: 100%;
+  margin-bottom: 20px;
+  height: calc(100% / 12);
+}
+
+div.main #signup {
+  width: 80%;
+  height: 10%;
+  margin-left: 10%;
+}
+
+@media screen and (max-width: 414px) {
+  .background {
+    display: none;
+  }
+
+  div.main .signUpForm {
+    margin: auto;
+    top: 12.5%;
+    left: 15%;
+    right: 15%;
+    width: 60%;
+  }
+}
