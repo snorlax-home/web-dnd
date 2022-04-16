@@ -30,12 +30,67 @@ function checkMainCheckBox(){
     var checkBox2 = document.getElementById("check2");
     var checkBox3 = document.getElementById("check3");
 
-    if(checkBox1.checked && checkBox2.checked && checkBox3.checked){
-        mainCheckBox.checked = true;
+    if(checkBox1 != null){
+        if(checkBox1.checked){
+            mainCheckBox.checked = true;
+        }
+        else{
+            mainCheckBox.checked = false;
+        }
     }
 
-    else{
-        mainCheckBox.checked = false;
+    if(checkBox2 != null){
+        if(checkBox2.checked){
+            mainCheckBox.checked = true;
+        }
+        else{
+            mainCheckBox.checked = false;
+        }
+    }
+
+    if(checkBox3 != null){
+        if(checkBox3.checked){
+            mainCheckBox.checked = true;
+        }
+        else{
+            mainCheckBox.checked = false;
+        }
+    }
+
+    if(checkBox2 != null && checkBox3 != null){
+        if(checkBox2.checked && checkBox3.checked){
+            mainCheckBox.checked = true;
+        }
+        else{
+            mainCheckBox.checked = false;
+        }
+    }
+
+    if(checkBox1 != null && checkBox3 != null){
+        if(checkBox1.checked && checkBox3.checked){
+            mainCheckBox.checked = true;
+        }
+        else{
+            mainCheckBox.checked = false;
+        }
+    }
+    
+    if(checkBox1 != null && checkBox2 != null){
+        if(checkBox1.checked && checkBox2.checked){
+            mainCheckBox.checked = true;
+        }
+        else{
+            mainCheckBox.checked = false;
+        }
+    }
+
+    if(checkBox1 != null && checkBox2 != null && checkBox3 != null){
+        if(checkBox1.checked && checkBox2.checked && checkBox3.checked){
+            mainCheckBox.checked = true;
+        }
+        else{
+            mainCheckBox.checked = false;
+        }
     }
 
     calcTotalItems();
@@ -48,14 +103,30 @@ function checkAllCheckBox(event){
     var checkBox2 = document.getElementById("check2");
     var checkBox3 = document.getElementById("check3");
     if(mainCheckBox.checked){
-        checkBox1.checked = true;
-        checkBox2.checked = true;
-        checkBox3.checked = true;
+        if(checkBox1 != null){
+            checkBox1.checked = true;
+        }
+        
+        if(checkBox2 != null){
+            checkBox2.checked = true;
+        }
+
+        if(checkBox3 != null){
+            checkBox3.checked = true;
+        }           
     }
     else{
-        checkBox1.checked = false;
-        checkBox2.checked = false;
-        checkBox3.checked = false;
+        if(checkBox1 != null){
+            checkBox1.checked = false;
+        }
+
+        if(checkBox2 != null){
+            checkBox2.checked = false;
+        }
+
+        if(checkBox3 != null){
+            checkBox3.checked = false;
+        }
     }
     calcTotalItems();
     calcFinalPrice();
@@ -65,27 +136,43 @@ function calcFinalPrice(){
     var checkBox1 = document.getElementById("check1");
     var checkBox2 = document.getElementById("check2");
     var checkBox3 = document.getElementById("check3");
-    var price1 = document.getElementById("Total_Price1").innerText;
-    var price2 = document.getElementById("Total_Price2").innerText;
-    var price3 = document.getElementById("Total_Price3").innerText;
-    var finalPrice = 0;
-    var finalPriceHTML = document.getElementById("Final_Price");
-    price1 = price1.substr(2);
-    price2 = price2.substr(2);
-    price3 = price3.substr(2);
 
-    if (checkBox1.checked) {
-        finalPrice += parseFloat(price1);
-    }
-
-    if (checkBox2.checked) {
-        finalPrice += parseFloat(price2);
-    }
-
-    if (checkBox3.checked) {
-        finalPrice += parseFloat(price3);
+    if(checkBox1 != null){
+        var price1 = document.getElementById("Total_Price1").innerText;
+        price1 = price1.substr(2);
     }
     
+    if(checkBox2 != null){
+        var price2 = document.getElementById("Total_Price2").innerText;
+        price2 = price2.substr(2);
+    }
+    
+    if(checkBox3 != null){
+        var price3 = document.getElementById("Total_Price3").innerText;
+        price3 = price3.substr(2);
+    }
+
+    var finalPrice = 0;
+    var finalPriceHTML = document.getElementById("Final_Price");
+    
+    if(checkBox1 != null){
+        if (checkBox1.checked) {
+            finalPrice += parseFloat(price1);
+        }
+    }
+
+    if(checkBox2 != null){
+        if (checkBox2.checked) {
+            finalPrice += parseFloat(price2);
+        }
+    }
+
+    if(checkBox3 != null){
+        if (checkBox3.checked) {
+            finalPrice += parseFloat(price3);
+        }
+    }
+
     finalPriceHTML.innerHTML = "RM" + finalPrice.toFixed(2);
 }
 
@@ -95,17 +182,23 @@ function calcTotalItems(){
     var checkBox3 = document.getElementById("check3");
     var totalItems = document.getElementById("total_items");
     var total = 0;
-
-    if (checkBox1.checked) {
-        total += 1;
+    
+    if(checkBox1 != null){
+        if (checkBox1.checked) {
+            total += 1;
+        }
     }
 
-    if (checkBox2.checked) {
-        total += 1;
+    if(checkBox2 != null){
+        if (checkBox2.checked) {
+            total += 1;
+        }
     }
 
-    if (checkBox3.checked) {
-        total += 1;
+    if(checkBox3 != null){
+        if (checkBox3.checked) {
+            total += 1;
+        }
     }
 
     if(total <= 1){
@@ -127,11 +220,74 @@ function checkItem(){
     var checkBox2 = document.getElementById("check2");
     var checkBox3 = document.getElementById("check3");
 
-    if (!checkBox1.checked && !checkBox2.checked && !checkBox3.checked) {
-        alert("You have not selected any items for checkout");
+    if(checkBox1 != null && checkBox2 == null && checkBox3 == null){
+        if (!checkBox1.checked) {
+            alert("You have not selected any items for checkout");
+        }
+
+        else{
+            location.replace("checkout.html")
+        }  
+    }
+
+    if(checkBox1 == null && checkBox2 != null && checkBox3 == null){
+        if (!checkBox2.checked) {
+            alert("You have not selected any items for checkout");
+        }
+
+        else{
+            location.replace("checkout.html")
+        }  
+    }
+
+    if(checkBox1 == null && checkBox2 == null && checkBox3 != null){
+        if (!checkBox3.checked) {
+            alert("You have not selected any items for checkout");
+        }
+
+        else{
+            location.replace("checkout.html")
+        }  
+    }
+
+    if(checkBox1 != null && checkBox2 != null && checkBox3 == null){
+        if (!checkBox1.checked && !checkBox2.checked) {
+            alert("You have not selected any items for checkout");
+        }
+
+        else{
+            location.replace("checkout.html")
+        }
+    }
+
+    if(checkBox1 != null && checkBox2 == null && checkBox3 != null){
+        if (!checkBox1.checked && !checkBox3.checked) {
+            alert("You have not selected any items for checkout");
+        }
+
+        else{
+            location.replace("checkout.html")
+        }
+    }
+
+    if(checkBox1 == null && checkBox2 != null && checkBox3 != null){
+        if (!checkBox2.checked && !checkBox3.checked) {
+            alert("You have not selected any items for checkout");
+        }
+
+        else{
+            location.replace("checkout.html")
+        }
+    }
+
+    if(checkBox1 != null && checkBox2 != null && checkBox3 != null){
+        if (!checkBox1.checked && !checkBox2.checked && !checkBox3.checked) {
+            alert("You have not selected any items for checkout");
+        }
+
+        else{
+            location.replace("checkout.html")
+        }
     }
     
-    else{
-        location.replace("checkout.html")
-    }  
 }
