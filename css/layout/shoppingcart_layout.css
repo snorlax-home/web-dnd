@@ -88,14 +88,14 @@ body{
  }
  
 .price{
-    width:10%;
+    width:14%;
     flex-direction: column;
     padding-left:40px;
-    padding-right:20px;
+    padding-right:15px;
  }
  
 .quantity{
-    width: 15%;
+    width: 14%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
