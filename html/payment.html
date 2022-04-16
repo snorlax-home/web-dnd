@@ -39,84 +39,83 @@
     </div>
   </header>
 
-    <div id ="Box" class = "popUpBox">
-
-        <div class = "BoxContent">
-            <span class="close">&times;</span>
-            
-            <div id = "loader" ></div>
-            <p id = "process" >processing...</p>
-            <p id = "done" >Payment is done</p>
-        </div>
-
+  <div id ="Box" class = "popUpBox">
+    <div class = "BoxContent">
+      <span class="close">&times;</span>
+      
+      <div id = "loader" ></div>
+      <p id = "process" >processing...</p>
+      <p id = "done" >Payment is done</p>
     </div>
+  </div>
     
-    <p class = "mid">Payment Method</p>
-    <button class = "bar_pink" > Online Banking  </button>
-    <button id = "button1" class="paymentbutton" onclick="ChoosePayment1()"> Maybank</button>
-    <button id = "button2" class="paymentbutton" onclick="ChoosePayment2()"> HongLeong Bank </button>
+  <p class = "mid">Payment Method</p>
+  <button class = "bar_pink" > Online Banking  </button>
+  <button id = "button1" class="paymentbutton" onclick="ChoosePayment1()"> Maybank</button>
+  <button id = "button2" class="paymentbutton" onclick="ChoosePayment2()"> HongLeong Bank </button>
 
 
-    <button class = Secondbar_pink>Credit/ Debit Card</button>
-    <button id = "button3" class="paymentbutton" onclick="ChoosePayment3()">*4428</button>
-    <button id = "button4" class="paymentbutton" onclick="ChoosePayment4()">*4438</button>
+  <button class = Secondbar_pink>Credit/ Debit Card</button>
+  <button id = "button3" class="paymentbutton" onclick="ChoosePayment3()">*4428</button>
+  <button id = "button4" class="paymentbutton" onclick="ChoosePayment4()">*4438</button>
 
-    <div class = "topbar"></div>
-    <div class = "midbar"> 
+  <div class = "topbar"></div>
+  <div class = "midbar"> 
+    <div class = "container">
+        <img class = img_product src="../asset/img/product_img/cabbage.jpg" alt="cabbage"> 
+        <p>cabbage<br><br>RM2.80</p>
+        <p class = "quantity">x1</p>
+    </div>
+  </div>
+
+  <div class = "midbar"> 
       <div class = "container">
-          <img class = img_product src="../asset/img/product_img/cabbage.jpg" alt="cabbage"> 
-          <p>cabbage<br><br>RM2.80</p>
+        <img class = "img_product" src="../asset/img/product_img/broccoli.jpg" alt="broccoli"> 
+        <p>broccoli<br><br>RM4.50</p>
+        <p class = "quantity">x1</p>
+      </div>
+  </div>
+
+  <div class = "midbar"> 
+      <div class = "container">
+          <img class = "img_product" src="../asset/img/product_img/maggi.jpg" alt="maggi"> 
+          <p>maggi<br><br>RM3.99</p>
           <p class = "quantity">x1</p>
       </div>
-    </div>
+  </div>
 
-    <div class = "midbar"> 
-        <div class = "container">
-          <img class = "img_product" src="../asset/img/product_img/broccoli.jpg" alt="broccoli"> 
-          <p>broccoli<br><br>RM4.50</p>
-          <p class = "quantity">x1</p>
-        </div>
-    </div>
-  
-    <div class = "midbar"> 
-        <div class = "container">
-            <img class = "img_product" src="../asset/img/product_img/maggi.jpg" alt="maggi"> 
-            <p>maggi<br><br>RM3.99</p>
-            <p class = "quantity">x1</p>
-        </div>
-    </div>
-
-    <div class = "totalbar">
-        <div class = "container">
-            <p class = "total">Item Subtotal<br><br>Total</p>
-            <p class = "totalprice">RM11.29<br>(Delivery fee + Tax) RM0.68<br>RM11.97</p>
-        </div>
-    </div>
-    <div>
-      <button class="button" onclick="confirm()">Confirm</button>
-    </div>
+  <div class = "totalbar">
+      <div class = "container">
+          <p class = "total">Item Subtotal<br><br>Total</p>
+          <p class = "totalprice">RM11.29<br>(Delivery fee + Tax) RM0.68<br>RM11.97</p>
+      </div>
+  </div>
+  <div>
+    <button class="button" onclick="confirm()">Confirm</button>
+  </div>
     
-    
-    <script src="../js/payment.js"></script>  
+  <script src="../js/payment.js"></script>
+  <footer>
     <div class="footer">
-        <div class="copyright">&copy; 2022 ShoppyMart. All Rights Reserved.</div>
-        <div class="docs">
-          <div class="links">
-            <a href="policy/tnc.html" class="link">Terms and Conditions</a><br />
-            <a href="policy/privacyPolicy.html" class="link">Privacy Policy</a><br />
-          </div>
-          <div class="address">
-            <strong> Address </strong>
-            <address>
-              ShoppyMart, <br />
-              Tunku Abdul Rahman University College ,<br />
-              Main Campus,<br />
-              Jalan Genting Kelang, <br />
-              53300 Kuala Lumpur, <br />
-              Wilayah Persekutuan Kuala Lumpur
-            </address>
-          </div>
+      <div class="copyright">&copy; 2022 ShoppyMart. All Rights Reserved.</div>
+      <div class="docs">
+        <div class="links">
+          <a href="policy/tnc.html" class="link">Terms and Conditions</a><br />
+          <a href="policy/privacyPolicy.html" class="link">Privacy Policy</a><br />
         </div>
-      </div>  
+        <div class="address">
+          <strong> Address </strong>
+          <address>
+            ShoppyMart, <br />
+            Tunku Abdul Rahman University College ,<br />
+            Main Campus,<br />
+            Jalan Genting Kelang, <br />
+            53300 Kuala Lumpur, <br />
+            Wilayah Persekutuan Kuala Lumpur
+          </address>
+        </div>
+      </div>
+    </div> 
+  </footer> 
 </body>
 </html>
