@@ -2,8 +2,8 @@
 
 h1 {
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 body {
@@ -13,13 +13,7 @@ body {
   max-width: 100%;
   width: 100%;
 }
-
-h2 {
-  text-align: center;
-  padding-top: 50px;
-}
-
-.categories {
+ .categories {
   display: flex;
   justify-content: center;
   padding: 10px;
