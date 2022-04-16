@@ -19,6 +19,11 @@ section.section_1 > form > input:focus {
   outline: none;
 }
 
+input::-webkit-search-cancel-button {
+  position: relative;
+  right: 25px;
+}
+
 section.section_2 > h2 {
   font-weight: 650;
   text-align: center;
