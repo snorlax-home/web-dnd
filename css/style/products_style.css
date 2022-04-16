@@ -45,6 +45,12 @@ input#input {
   border: 2px solid gray;
   font-size: 16px;
   text-align: center;
+  cursor: default;
+}
+
+button#minus,
+button#plus {
+  cursor: pointer;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -60,6 +66,7 @@ button#add-to-cart {
   font-size: 24px;
   font-weight: bold;
   border: none;
+  cursor: pointer;
 }
 
 section.section_3 {
