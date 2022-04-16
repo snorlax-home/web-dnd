@@ -20,7 +20,7 @@
 
 .paymentbutton
 {
-    margin-top: 1%;
+    margin-top: 2%;
     margin-left: 10%;
     width: 78%;
     height: 50px;
@@ -43,21 +43,21 @@
 {
     margin-top: 5%;
     margin-left: 10%;
-    width: 80%;
+    width: 78.3%;
     height: 70px;
 }
 
 .midbar
 {
     margin-left: 10%;
-    width: 80%;
+    width: 78.3%;
     height: 300px;
 }
 
 .totalbar
 {
     margin-left: 10%;
-    width: 80%;
+    width: 78.3%;
     height: 330px;
 }
 
@@ -84,14 +84,16 @@
 
 .quantity
 {
+    padding-right: 30px;
     text-align: right;
     width: 60% !important;
 }
 
 .totalprice
 {
+    margin-left: 100px;
     text-align: right;
-    width: 75% !important;
+    width: 60% !important;
 }
 
 .button

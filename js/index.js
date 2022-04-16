@@ -7,16 +7,14 @@ var b1 = document.getElementById("button1");
 var b2 = document.getElementById("button2");
 var b3 = document.getElementById("button3");
 
-var m1 = document.getElementById("missionTilte");
+var m1 = document.getElementById("missionTitle");
 var m2 = document.getElementById("missionImg");
 var m3 = document.getElementById("mission");
 
-var w1 = document.getElementById("WhyUsTilte");
+var w1 = document.getElementById("WhyUsTitle");
 var w2 = document.getElementById("WhyUsImg");
 var w3 = document.getElementById("WhyUs");
 
-
-firstrun()
 
 setInterval(() => 
 {
@@ -100,7 +98,7 @@ function ChooseSlide3()
     b3.style.backgroundColor = "#F26B8A";
 }
 
-function ChooseTilte1()
+function ChooseTitle1()
 {
     w1.style.backgroundColor = "#FA87A1";
     w2.style.display = "none";
@@ -112,7 +110,7 @@ function ChooseTilte1()
 }
 
 
-function ChooseTilte2()
+function ChooseTitle2()
 {
     m1.style.backgroundColor = "#FA87A1";
     m2.style.display = "none";

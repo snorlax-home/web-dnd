@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ShoppyMart</title>
     <link rel="stylesheet" href="css/overall.css"/>
     <link rel="stylesheet" href="css/layout/index_layout.css">
     <link rel="stylesheet" href="css/style/index_style.css">
     <script src="js/header.js"></script>
-
 </head>
-<body>
+<body onload="ChooseTitle1();">
   <header>
     <div class="header">
       <a href="index.html"><img src="asset/img/logo/logo.svg" alt="logo" class="logo" /></a>
@@ -38,33 +37,27 @@
       <div class="profile" onclick="window.location.href = 'html/profile.html'"></div>
     </div>
   </header>
-
-    
-    <div class = "banner">
-      <button id = "button1" onclick="ChooseSlide1()"></button>
-      <button id = "button2" onclick="ChooseSlide2()"></button>
-      <button id = "button3" onclick="ChooseSlide3()"></button>
-      <img id = "slide1" class="Slides" src="./asset/img/product_img/broccoli.jpg">
-      <img id = "slide2" class="Slides" src="./asset/img/product_img/cabbage.jpg" >
-      <img id = "slide3" class="Slides" src="./asset/img/product_img/maggi.jpg" > 
-    </div>
-
-    <button id = "missionTilte" class = "tilte1" onclick="ChooseTilte1()">Mission</button>
-    <button id = "WhyUsTilte" class = "tilte2" onclick="ChooseTilte2()">Why Us</button>
-    <div class = "box">
-     
+  <div class = "banner">
+    <button id = "button1" onclick="ChooseSlide1()"></button>
+    <button id = "button2" onclick="ChooseSlide2()"></button>
+    <button id = "button3" onclick="ChooseSlide3()"></button>
+    <img id = "slide1" class="Slides" src="./asset/img/product_img/broccoli.jpg">
+    <img id = "slide2" class="Slides" src="./asset/img/product_img/cabbage.jpg" >
+    <img id = "slide3" class="Slides" src="./asset/img/product_img/maggi.jpg" > 
+  </div>
+  <button id = "missionTitle" class = "title1" onclick="ChooseTitle1()">Mission</button>
+  <button id = "WhyUsTitle" class = "title2" onclick="ChooseTitle2()">Why Us</button>
+  <div class = "box">
       <img id = "missionImg" src="./asset/img/product_img/broccoli.jpg" alt="testing" >
-      <p id = "mission">Our mission is to delivery the fresh and tasty food to every customer in short time with affortable price.
-         We would also like to enchances the quality life for our customer by delivering fresh and healthy food.</p>
+      <p id = "mission">Our mission is to delivery the fresh and tasty food to every customer in short time with affordable price.
+         We would also like to enhances the quality life for our customer by delivering fresh and healthy food.</p>
       
       <img id = "WhyUsImg" src="./asset/img/product_img/maggi.jpg" alt="testing" >
       <p id = "WhyUs">The cheapest price of groceries in Malaysia. <br><br> 
        Always complete the delivery order within 24 hours! <br><br> 
       We would not charge customer if delivery is not completed within 24 hours. </p>   
-
-
     </div>
-    <footer \>
+    <footer>
         <div class="footer">
             <div class="copyright">&copy; 2022 ShoppyMart. All Rights Reserved.</div>
             <div class="docs">
