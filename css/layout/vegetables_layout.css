@@ -5,11 +5,14 @@ h1{
 }
 
 .flex-container {
-    display: inline-flexbox;
+    display: flex;
     flex-wrap: wrap;
-}
+    justify-content: center;
+    padding-top:10px;
+  }
 
 .flex-container > div {
     text-align: center;
+    padding:10px;
 }
 

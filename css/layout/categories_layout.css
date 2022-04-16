@@ -25,6 +25,13 @@ h2{
     padding:10px;
 }
 
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top:10px
+  }
+
 /* Mobile Screen Layout */
 /* Image map do not work after decreaseing the side of the picture */
 @media only screen and (max-width: 414px) {
