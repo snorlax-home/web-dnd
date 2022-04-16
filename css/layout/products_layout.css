@@ -120,5 +120,82 @@ section.section_4 li {
     flex-direction: column;
     padding: 12px 12px 0 12px;
     width: 85%;
+    height: auto;
+  }
+
+  section.section_2 div.images {
+    width: 100%;
+    height: 50%;
+  }
+
+  section.section_2 div.images > img {
+    width: 100%;
+    height: 100%;
+  }
+
+  section.section_2 div.details {
+    width: 100%;
+    height: 50%;
+  }
+
+  section.section_2 div.details > div {
+    margin: auto;
+  }
+
+  section.section_2 div.details > h4 {
+    margin-bottom: 0;
+  }
+
+  section.section_2 div.details p > span#separate {
+    margin-left: 4px;
+    margin-right: 8px;
+  }
+
+  div.flex {
+    margin: auto;
+  }
+
+  div.flex div {
+    margin-left: 11%;
+  }
+
+  button#minus,
+  button#plus {
+    width: 42px;
+    height: 38px;
+  }
+
+  input#input {
+    width: 56px;
+    height: 32px;
+  }
+
+  button#add-to-cart {
+    width: 100%;
+    height: 50px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  section.section_3 {
+    padding: 12px 12px 0 12px;
+    width: 85%;
+    height: 400px;
+  }
+
+  section.section_3 > table {
+    margin: auto;
+    height: 100%;
+  }
+
+  section.section_3 > table td {
+    margin: auto;
+    height: 25%;
+  }
+
+  section.section_4 {
+    width: 85%;
+    height: auto;
+    padding: 12px 12px 12px 12px;
   }
 }
