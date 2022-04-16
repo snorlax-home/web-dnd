@@ -104,10 +104,50 @@ section.section_4 p {
 section.section_4 p#hashtag {
   font-size: 24px;
   word-spacing: 15px;
+  text-align: justify;
 }
 
 section.section_4 ul {
+  text-align: justify;
   font-size: 24px;
   line-height: 40px;
   word-spacing: 6px;
+}
+
+@media only screen and (max-width: 414px) {
+  section.section_2 div.details h4 {
+    font-size: 16px;
+  }
+
+  section.section_2 div.details p {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  section.section_2 div.details h3 {
+    font-size: 52px;
+  }
+
+  section.section_3 > table {
+    font-size: 14px;
+  }
+
+  section.section_3 > table > thead th {
+    font-size: 26px;
+  }
+
+  section.section_4 > h3 {
+    font-size: 26px;
+  }
+
+  section.section_4 p,
+  section.section_4 p#hashtag {
+    font-size: 14px;
+  }
+
+  section.section_4 ul {
+    font-size: 14px;
+    line-height: 24px;
+    word-spacing: 6px;
+  }
 }
