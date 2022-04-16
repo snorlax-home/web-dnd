@@ -1,0 +1,98 @@
+section.section_1 > p > a {
+  text-decoration: none;
+  color: #5f9ed9;
+  font-size: 18px;
+}
+
+section.section_1 > p > a:hover {
+  text-decoration: underline;
+}
+
+section.section_1 > p > span {
+  font-size: 24px;
+  color: #5f9ed9;
+}
+
+section.section_1 > p {
+  color: #5f9ed9;
+  font-size: 18px;
+}
+
+section.section_2 {
+  background-color: #fff3e6;
+}
+
+section.section_2 div.details h4 {
+  font-size: 28px;
+}
+
+section.section_2 div.details p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+section.section_2 div.details p > span#stars {
+  color: rgb(255, 185, 0);
+}
+
+section.section_2 div.details h3 {
+  font-size: 72px;
+}
+
+button#minus,
+button#plus,
+input#input {
+  border: 2px solid gray;
+  font-size: 16px;
+  text-align: center;
+}
+
+button#add-to-cart {
+  background-color: #fa87a1;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+}
+
+section.section_3 {
+  background-color: #fff3e6;
+}
+
+section.section_3 > table {
+  border-collapse: collapse;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+section.section_3 > table > thead th {
+  font-size: 36px;
+}
+
+section.section_3 > table th {
+  text-align: left;
+  color: rgb(120, 120, 120);
+}
+
+section.section_3 > table td a {
+  text-decoration: none;
+  color: #5f9ed9;
+}
+
+section.section_3 > table td a:hover {
+  text-decoration: underline;
+}
+
+section.section_3 > table tr#row-1 td {
+  color: #5f9ed9;
+}
+
+section.section_4 {
+  background-color: #fff3e6;
+}
+
+section.section_4 > h3 {
+  font-size: 36px;
+  font-weight: bold;
+  color: rgb(120, 120, 120);
+}
