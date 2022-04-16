@@ -47,6 +47,13 @@ input#input {
   text-align: center;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 button#add-to-cart {
   background-color: #fa87a1;
   color: #ffffff;
