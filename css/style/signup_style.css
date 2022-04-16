@@ -1,24 +1,5 @@
-body {
-  margin: 0;
-  padding: 0;
-}
-
 .header {
-  height: 65px;
-  width: 100%;
   background-color: #fff3e6;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-div.header .logo {
-  padding-left: 30px;
-}
-
-div.header .nav {
-  margin-left: auto;
-  margin-right: 30px;
 }
 
 div.header .link {
@@ -33,30 +14,18 @@ div.header .links {
   font-weight: 900;
   color: #fa87a1;
   font-size: 18px;
-  display: flex;
-  margin-left: auto;
-  margin-right: 30px;
 }
 
 div.main {
-  height: calc(100% - 65px);
   background-color: #fa87a1;
 }
 
 div.main .background {
-  padding-top: 2.5%;
-  padding-left: 5%;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
   color: #fff3e6;
-}
-
-div.main .backgroundImg {
-  height: 400px;
-  width: 400px;
-  margin-left: 2.5%;
 }
 
 div.main #backgroundTitle {
@@ -65,13 +34,7 @@ div.main #backgroundTitle {
 }
 
 div.main .signUpForm {
-  position: absolute;
-  top: 10%;
-  right: 10%;
-  height: 80%;
-  width: 30%;
   background-color: #fff3e6;
-  padding: 15px;
   border-radius: 15px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -83,7 +46,6 @@ div.main .formTitle {
   font-size: 40px;
   color: #8c4900;
   text-align: center;
-  padding: 15px 0 50px;
 }
 
 div.main label {
@@ -97,9 +59,6 @@ div.main label {
 div.main #username,
 #password,
 #confirmPassword {
-  width: 100%;
-  margin-bottom: 20px;
-  height: calc(100% / 12);
   border: 1px solid #8c4900;
   box-sizing: border-box;
   border-radius: 10px;
@@ -121,13 +80,10 @@ div.main a {
 }
 
 div.main #signup {
-  width: 80%;
-  height: 10%;
   background: #fa87a1;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   border: none;
-  margin-left: 10%;
 
   font-family: "Montserrat";
   font-style: normal;
@@ -139,17 +95,5 @@ div.main #signup {
 @media screen and (max-width: 414px) {
   .link {
     font-size: 14px;
-  }
-
-  .background {
-    display: none;
-  }
-
-  div.main .signUpForm {
-    margin: auto;
-    top: 12.5%;
-    left: 15%;
-    right: 15%;
-    width: 60%;
   }
 }
