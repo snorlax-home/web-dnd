@@ -1,131 +1,108 @@
-.mid
-{
-    font-size: xx-large;
-    font-weight: bold;
+.mid {
+  font-size: xx-large;
+  font-weight: bold;
 }
 
-.bar_pink
-{
-    background-color: #FA87A1;
-    color: white;
-    font-weight: bold;
-    font-size: x-large;
-    text-align: left;
-    border: none;
+.bar_pink {
+  background-color: #fa87a1;
+  color: white;
+  font-weight: bold;
+  font-size: x-large;
+  text-align: left;
+  border: none;
 }
 
-.paymentbutton
-{
-    background-color: #9C7B83;
-    color: white;
-    font-weight: bold;
-    font-size: x-large;
-    text-align: left;
-    border: none;
-    transition-duration: 0.6s;
+.paymentbutton {
+  background-color: #9c7b83;
+  color: white;
+  font-weight: bold;
+  font-size: x-large;
+  text-align: left;
+  border: none;
+  transition-duration: 0.6s;
 }
 
-.paymentbutton:hover
-{
-    background-color: #fc9383c0 !important;
+.paymentbutton:hover {
+  background-color: #fc9383c0 !important;
 }
 
-.paymentbutton:active
-{
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-    background-color: #FC9483 !important;
+.paymentbutton:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  background-color: #fc9483 !important;
 }
 
-.Secondbar_pink
-{
-    background-color: #FA87A1;
-    color: white;
-    font-weight: bold;
-    font-size: x-large;
-    text-align: left;
-    border: none;
+.Secondbar_pink {
+  background-color: #fa87a1;
+  color: white;
+  font-weight: bold;
+  font-size: x-large;
+  text-align: left;
+  border: none;
 }
 
-.topbar
-{
-    background-color: #FA87A1;
+.topbar {
+  background-color: #fa87a1;
 }
 
-.midbar
-{
-    background-color: #F2ABBB;
+.midbar {
+  background-color: #f2abbb;
 }
 
-.totalbar
-{
-    background-color: #FA87A1;
+.totalbar {
+  background-color: #fa87a1;
 }
 
-.container p
-{
-    font-size: x-large;
-    font-weight: bold;
-    color: #332421;
-    font-size:2vw;
+.container p {
+  font-size: x-large;
+  font-weight: bold;
+  color: #332421;
+  font-size: 2vw;
 }
 
-.container img
-{
-    min-width: 100px;
+.container img {
+  min-width: 100px;
 }
 
-.quantity
-{
-    
-    font-weight: bold;
-    
+.quantity {
+  font-weight: bold;
 }
 
-.total
-{
-    color: white;
-    font-size: x-large;
-    font-weight: bold;
+.total {
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
 }
 
-.totalprice
-{
-    color: white;
-    font-size: x-large;
-    font-weight: bold;
+.totalprice {
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
 }
 
-.button
-{
-    background-color: #332421;
-    border: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: x-large;
-    transition-duration: 0.6s;
+.button {
+  background-color: #332421;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: x-large;
+  transition-duration: 0.6s;
 }
 
-.button:hover
-{
-    background-color: rgba(194, 97, 82, 0.753)!important;
+.button:hover {
+  background-color: rgba(194, 97, 82, 0.753) !important;
 }
 
-.button:active
-{
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-    background-color: #FC9483 !important;
+.button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  background-color: #fc9483 !important;
 }
 
-
-.BoxContent
-{
-    background-color: #fefefe;
-    text-align: center;
-    font-size: x-large;
-
+.BoxContent {
+  background-color: #fefefe;
+  text-align: center;
+  font-size: x-large;
 }
-

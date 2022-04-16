@@ -13,7 +13,7 @@ body {
   max-width: 100%;
   width: 100%;
 }
- .categories {
+.categories {
   display: flex;
   justify-content: center;
   padding: 10px;
