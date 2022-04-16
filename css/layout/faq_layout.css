@@ -34,7 +34,7 @@ div.question {
   margin: auto;
   margin-bottom: 120px;
   width: 70%;
-  height: 268px;
+  height: auto;
 }
 
 div.question > h3 {
@@ -69,7 +69,7 @@ div.question > p {
   div.question {
     margin-bottom: 80px;
     width: 85%;
-    height: 398px;
+    height: auto;
   }
 
   div.question > h3 {
