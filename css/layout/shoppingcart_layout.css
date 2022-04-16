@@ -205,13 +205,6 @@ body{
         text-align: center;
         justify-content: center;
     }
-    
-    .product_img{
-        padding: 0 50px 0 12px;
-        display:flex;
-        min-width: 58px;
-        box-sizing: border-box;
-     }
 
     .product_name{
         width:20%;          
