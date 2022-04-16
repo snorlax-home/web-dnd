@@ -37,4 +37,8 @@ h2{
     padding:10px;
 }
 
+.flex-container > div > a > img{
+    width:250px;
+}
+
 
