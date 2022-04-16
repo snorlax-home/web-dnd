@@ -33,6 +33,7 @@ h2{
 }
 
 /* Mobile Screen Layout */
+/* Image map do not work after decreaseing the side of the picture */
 @media only screen and (max-width: 414px) {
     .categories > img{
         width:390px;
