@@ -10,20 +10,20 @@ footer {
   margin-left: 31%;
   border-radius: 0px 0px 50px 50px;
   padding: 20px;
-  width: 37%;
-  height: 325px;
+  width: 38%;
+  height: 375px;
 }
 
 .box img {
   height: 300px;
-  width: 200px;
+  width: 45%;
   float: left;
   margin-top: 10px;
   margin-left: 10px;
 }
 
 .box p {
-  width: 50%;
+  width: 45%;
   float: right;
   text-align: justify;
 }

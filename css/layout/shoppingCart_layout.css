@@ -114,12 +114,12 @@ body {
   text-align: center;
 }
 
-.subtrate:first-child {
+.subtract:first-child {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-.subtrate {
+.subtract {
   outline: none;
   cursor: pointer;
   align-items: center;
