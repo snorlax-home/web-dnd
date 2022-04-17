@@ -94,7 +94,7 @@ function checkLogin() {
   let isLoggedIn = getCookie("isLoggedIn");
   if (isLoggedIn != "true") {
     alert("Please Sign Up!");
-    window.location.replace("./signup.html");
+    window.location.replace("./signUp.html");
   }
 }
 
