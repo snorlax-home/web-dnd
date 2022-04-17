@@ -1,9 +1,9 @@
-const minusButton = document.getElementById('minus');
-const plusButton = document.getElementById('plus');
-const inputField = document.getElementById('input');
-const stockCount = parseInt(document.getElementById('stock-count').innerHTML);
+const minusButton = document.getElementById("minus");
+const plusButton = document.getElementById("plus");
+const inputField = document.getElementById("input");
+const stockCount = parseInt(document.getElementById("stock-count").innerHTML);
 
-minusButton.addEventListener('click', event => {
+minusButton.addEventListener("click", (event) => {
   event.preventDefault();
   const currentValue = Number(inputField.value) || 0;
   if (currentValue > 1) {
@@ -14,7 +14,7 @@ minusButton.addEventListener('click', event => {
   }
 });
 
-plusButton.addEventListener('click', event => {
+plusButton.addEventListener("click", (event) => {
   event.preventDefault();
   const currentValue = Number(inputField.value) || 0;
   if (currentValue < stockCount) {

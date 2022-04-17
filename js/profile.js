@@ -52,7 +52,7 @@ function validatePassword() {
         return true;
       } else {
         alert(
-          "Password is not valid, your password must contain at least 1 number, symbol, upper case and lower case alphabet with at least 6 charaters"
+          "Password is not valid, your password must contain at least 1 number, symbol, upper case and lower case alphabet with at least 6 characters"
         );
       }
     } else {
@@ -94,8 +94,8 @@ function checkLogin() {
   let isLoggedIn = getCookie("isLoggedIn");
   if (isLoggedIn != "true") {
     alert("Please Sign Up!");
-    window.location.replace("./signup.html");
+    window.location.replace("./signUp.html");
   }
 }
 
-checkLogin()
+checkLogin();
