@@ -1,5 +1,5 @@
 var paymentOption = 0;
-var Boxs = document.getElementById("Box");
+var Boxes = document.getElementById("Box");
 var cross = document.getElementsByClassName("close")[0];
 var proc = document.getElementById("process");
 var done = document.getElementById("done");
@@ -67,14 +67,14 @@ function confirm() {
     location.href =
       "https://s.hongleongconnect.my/rib/app/fo/login?icp=hlb-en-all-header-txt-connectweb";
   } else if (paymentOption == 3) {
-    Boxs.style.display = "block";
+    Boxes.style.display = "block";
     setTimeout(() => {
       proc.style.display = "none";
       loader.style.display = "none";
       done.style.display = "block";
     }, 3000);
   } else if (paymentOption == 4) {
-    Boxs.style.display = "block";
+    Boxes.style.display = "block";
     setTimeout(() => {
       proc.style.display = "none";
       loader.style.display = "none";
@@ -84,15 +84,15 @@ function confirm() {
 }
 
 cross.onclick = function () {
-  Boxs.style.display = "none";
+  Boxes.style.display = "none";
   done.style.display = "none";
   proc.style.display = "block";
   loader.style.display = "block";
 };
 
 window.onclick = function (event) {
-  if (event.target == Boxs) {
-    Boxs.style.display = "none";
+  if (event.target == Boxes) {
+    Boxes.style.display = "none";
     done.style.display = "none";
     proc.style.display = "block";
     loader.style.display = "block";

@@ -52,7 +52,7 @@ function validatePassword() {
         return true;
       } else {
         alert(
-          "Password is not valid, your password must contain at least 1 number, symbol, upper case and lower case alphabet with at least 6 charaters"
+          "Password is not valid, your password must contain at least 1 number, symbol, upper case and lower case alphabet with at least 6 characters"
         );
       }
     } else {
