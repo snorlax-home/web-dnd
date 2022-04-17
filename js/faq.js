@@ -1,12 +1,12 @@
 // Reveal Sections
-const allQuestions = document.querySelectorAll('div.question');
+const allQuestions = document.querySelectorAll("div.question");
 
 const revealQuestion = function (entries, observer) {
   const [entry] = entries;
 
   if (!entry.isIntersecting) return;
 
-  entry.target.classList.remove('question-hidden');
+  entry.target.classList.remove("question-hidden");
   observer.unobserve(entry.target);
 };
 
@@ -17,5 +17,5 @@ const sectionObserver = new IntersectionObserver(revealQuestion, {
 
 allQuestions.forEach(function (question) {
   sectionObserver.observe(question);
-  question.classList.add('question-hidden');
+  question.classList.add("question-hidden");
 });

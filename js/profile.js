@@ -98,4 +98,4 @@ function checkLogin() {
   }
 }
 
-checkLogin()
+checkLogin();
