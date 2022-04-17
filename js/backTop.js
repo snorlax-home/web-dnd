@@ -2,7 +2,7 @@ const backToTopButton = document.querySelector('#back-to-top-btn');
 
 window.addEventListener('scroll', scrollFunction);
 
-// This function will show the button when user scroll > 425 pixel and hide the button when user is within 0-425 pixel (vertical axis)
+// This function will show the button when user scroll > 300 pixel and hide the button when user is within 0-300 pixel (vertical axis)
 function scrollFunction() {
   // Show Button
   if (window.pageYOffset > 300) {
