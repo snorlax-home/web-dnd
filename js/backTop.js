@@ -17,7 +17,7 @@ function scrollFunction() {
     if (backToTopButton.classList.contains("btnEntrance")) {
       backToTopButton.classList.remove("btnEntrance");
       backToTopButton.classList.add("btnExit");
-      // Add some delay before the button disapper (smoothness)
+      // Add some delay before the button disappear (smoothness)
       setTimeout(function () {
         backToTopButton.style.display = "none";
       }, 250);
