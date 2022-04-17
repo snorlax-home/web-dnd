@@ -62,7 +62,7 @@ div.main #username,
   height: calc(100% / 12);
 }
 
-div.main #signup {
+div.main #signUp {
   width: 80%;
   height: 10%;
   margin-left: 10%;
