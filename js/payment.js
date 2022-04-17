@@ -73,6 +73,7 @@ function confirm() {
       proc.style.display = 'none';
       loader.style.display = 'none';
       done.style.display = 'block';
+      redirect.style.display = 'block';
     }, 3000);
   }
   directToIndex();
@@ -80,7 +81,6 @@ function confirm() {
 
 function directToIndex() {
   setTimeout(() => {
-    redirect.style.display = 'block';
     location.href = '../index.html';
   }, 8000);
 }

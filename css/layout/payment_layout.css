@@ -123,6 +123,10 @@
   display: none;
 }
 
+#redirect {
+  display: none;
+}
+
 #loader {
   margin: auto;
   border: 20px solid #eaf0f6;
